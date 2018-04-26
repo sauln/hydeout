@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software design on Nathaniel Saul | Around About</title>
+    <link>/tags/software-design/</link>
+    <description>Recent content in Software design on Nathaniel Saul | Around About</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/software-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An argument for TDD</title>
+      <link>/blog/debug-driven-development/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/debug-driven-development/</guid>
+      <description>In this post, We propose a new software development methodology dubbed debug-driven development. Building upon work out of context and ignoring basic principles of time management, our proposed method cuts the average development* time of a project in half.
+By using test driven development, we can redefine the develop-debug process to completely eliminate the development step. Instead of developing a feature, we can fix a broken test and in doing so the development portion of the develop-debug process disappears.</description>
+    </item>
+    
+    <item>
+      <title>The Law of Demeter</title>
+      <link>/blog/law-of-demeter/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/law-of-demeter/</guid>
+      <description>The Law of Demeter is a small set of rules for how objects should interact with each other. It helps define the boundaries between objects and determine who controls and owns what. Applying this design principle gives each object their own personal space and keeps objects from micromanaging others.
+The rules The LoD provides actionable and quantifiable rules for structuring software that help enable the SOLID principles. It defines what methods and variables an object is allowed to call.</description>
+    </item>
+    
+  </channel>
+</rss>

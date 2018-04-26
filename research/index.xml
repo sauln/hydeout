@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Nathaniel Saul | Around About</title>
+    <link>/research/</link>
+    <description>Recent content in Research on Nathaniel Saul | Around About</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Galaxy classification</title>
+      <link>/research/galaxies/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/research/galaxies/</guid>
+      <description>I was awarded a NASA space grant through WSU to develop methods using Topological Data Analysis for classifying galaxies that have WR-bumps or not. More information about this project will be coming soon.</description>
+    </item>
+    
+    <item>
+      <title>Kepler Mapper</title>
+      <link>/research/kepler-mapper/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/research/kepler-mapper/</guid>
+      <description>I work on Kepler Mapper.</description>
+    </item>
+    
+    <item>
+      <title>Persim</title>
+      <link>/research/persim/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/research/persim/</guid>
+      <description>I work on Persim, a library for persistence images in Python that can be used with Dionysus or Ripser.</description>
+    </item>
+    
+    <item>
+      <title>Ripser</title>
+      <link>/research/ripser/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/research/ripser/</guid>
+      <description>I work on Ripser, more specifically, the Python wrapper of Ripser.</description>
+    </item>
+    
+  </channel>
+</rss>

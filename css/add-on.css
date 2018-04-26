@@ -1,0 +1,38 @@
+/*
+  This css file is for individual users to restyle items for their personal site,
+  or for the implementation of features specifically for their site. Anything that
+  is an official part of the theme (ex. Pull Requests) should be included in main.css
+  within the formating given.
+*/
+
+
+.theoremgroup {
+  border: 2px solid grey;
+  font-style: italic;
+  /*font-size: 20px;*/
+  line-height: 40px;
+  /*font-weight: 300;*/
+  padding: 2;
+  margin: 30px 0;
+  /*text-shadow: 0 1px 1px #666666;*/
+  background: rgba(255,255, 255, 0.4);
+  box-shadow: 1px 1.5px 1px #888888;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+code.has-jax {
+  font: inherit;
+  font-size: 100%;
+  background: inherit;
+  border: inherit;
+  color: #515151;
+}
+
+img.center {
+  display: block;
+  margin: 0 auto;
+}       

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mapper on Nathaniel Saul | Around About</title>
+    <link>/tags/mapper/</link>
+    <description>Recent content in Mapper on Nathaniel Saul | Around About</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/mapper/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nerves and Towers I: Introduction</title>
+      <link>/blog/towers-basics/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/towers-basics/</guid>
+      <description>In unsupervised learning, one of the main questions we want to answer is what type of structure does this set or shape have? The field of algebraic topology supplies a few tools to help answer this question. We can ask topological questions about the data, such as how many clusters or connected components are there? or are there gaps, holes, or voids in the data?. These question can be easy to answer if the shape is well defined, but in practice, we instead have data sampled from that shape.</description>
+    </item>
+    
+    <item>
+      <title>Nerves and Towers II: Nerves</title>
+      <link>/blog/towers-nerves/</link>
+      <pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/towers-nerves/</guid>
+      <description>The nerve is a simplicial complex built from a cover. It is a discrete summarization of the cover that captures the interesting topological features. Additionally, if the cover is sufficiently refined, then the nerve is guaranteed to preserve the topological features. A nerve of a cover is constructed in a very straight forward way: An (n-1)-dimensional simplex is added for each nonempty n-way intersection of elements of the cover.
+The nerve of a cover \(~\mathcal{N}(\mathcal{U})\) is a set of simplices such that $$ \mathcal{N} (\mathcal{U}) = \left\{(j, \ldots, k) : \bigcap_{i = j, \ldots, k} U_i \right\}$$  The one-way intersection of a set is vacuously nonempty, so we add a vertex for every element of the cover.</description>
+    </item>
+    
+    <item>
+      <title>Nerves and Towers III: Towers</title>
+      <link>/blog/towers-towers/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/towers-towers/</guid>
+      <description>Once we understand the tower, we will show that it plays nice with all of the other definitions we have constructed so far and how it allows us to naturally define a multiscale mapper.
+A tower \(~\mathcal{T} \) is a tuple ( \(T_\epsilon\), \(\{t_{\epsilon, \epsilon^\prime}\}\)) of indexed objects \( T_\epsilon \) with morphisms \[t_{\epsilon, \epsilon^\prime}: T_\epsilon \to T_{\epsilon^\prime} \] defined when \( \epsilon \le \epsilon^\prime \). Additionally, we must have that morphisms are composable, that is \( t_{\epsilon, \epsilon^\prime} \circ t_{\epsilon^\prime, \epsilon^{\prime \prime}} = t_{\epsilon, \epsilon^{\prime \prime}} \).</description>
+    </item>
+    
+    <item>
+      <title>What is Mapper?</title>
+      <link>/blog/mapper-intro/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/mapper-intro/</guid>
+      <description>As one of the main tools from the field of Topological Data Analysis, mapper has been shown to be particularly useful for exploring high dimensional point cloud data.This post will walk through the mapper construction from an intuitive perspective and demonstrate its use on a toy example.
+Motivation Mapper is way to construct a graph (or simplicial complex) from data in a way that reveals the some of the topological features of the space.</description>
+    </item>
+    
+  </channel>
+</rss>
