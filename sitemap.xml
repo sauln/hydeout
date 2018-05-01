@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/updates/socg/</loc>
+    <lastmod>2018-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/updates/research-showcase/</loc>
     <lastmod>2018-04-12T00:00:00+00:00</lastmod>
   </url>
@@ -78,12 +83,6 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/blog/</loc>
     <lastmod>2017-12-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -91,7 +90,6 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -119,7 +117,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -148,7 +146,7 @@
   
   <url>
     <loc>/updates/</loc>
-    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
