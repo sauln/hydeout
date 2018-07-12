@@ -6,17 +6,26 @@
     <description>Recent content in Updates on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/updates/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My work on stitching mappers together along filter functions was accepted to the Symposium on Computational Geometry&#39;s Young Researchers Forum. (In collaboration with Bei Wang and Bala Krishnamoorthy.</title>
-      <link>/updates/socg/</link>
+      <title>I presented my work on stitching mappers together at the Sympossium on Computational Geometry&#39;s Young Researchers Forum. The work was in collaboration with Bei Wang and Bala Krishnamoorthy and we plan on releasing complete work soon..</title>
+      <link>/updates/socg-presented/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/socg-presented/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My work on stitching mappers together along filter functions was accepted to the Symposium on Computational Geometry&#39;s Young Researchers Forum. (In collaboration with Bei Wang and Bala Krishnamoorthy.)</title>
+      <link>/updates/socg-accepted/</link>
       <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/updates/socg/</guid>
+      <guid>/updates/socg-accepted/</guid>
       <description></description>
     </item>
     

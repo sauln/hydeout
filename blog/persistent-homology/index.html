@@ -1,0 +1,941 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "/"
+        },
+        "articleSection" : "blog",
+        "name" : "Introduction to persistent homology",
+        "headline" : "Introduction to persistent homology",
+        "description" : "Persistence 101.",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2017",
+        "datePublished": "2017-12-06 00:00:00 &#43;0000 UTC",
+        "dateModified" : "2017-12-06 00:00:00 &#43;0000 UTC",
+        "url" : "/blog/persistent-homology/",
+        "wordCount" : "177",
+        "keywords" : [ "Persistent homology","TDA","Math","Blog" ]
+    }
+    </script>
+        
+            
+                <title>Introduction to persistent homology</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.39" />
+        
+
+
+        
+            <meta name="author" content="Nathaniel Saul">
+        
+        
+            <meta name="description" content="Persistence 101.">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introduction to persistent homology"/>
+<meta name="twitter:description" content="Persistence 101."/>
+<meta name="twitter:site" content="@_ropthe_"/>
+
+        <meta property="og:title" content="Introduction to persistent homology" />
+<meta property="og:description" content="Persistence 101." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/persistent-homology/" />
+
+
+
+<meta property="article:published_time" content="2017-12-06T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2017-12-06T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        
+<meta itemprop="name" content="Introduction to persistent homology">
+<meta itemprop="description" content="Persistence 101.">
+
+
+<meta itemprop="datePublished" content="2017-12-06T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-12-06T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="177">
+
+
+
+<meta itemprop="keywords" content="Persistent homology,TDA,Math," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-101939399-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/docs/saul-resume.pdf">
+                            <i class="fa fa-file-o">&nbsp;</i>CV
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/research/">
+                            <i class="fa fa-pie-chart">&nbsp;</i>Research
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/software/">
+                            <i class="fa fa-cogs">&nbsp;</i>Software
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/docs/saul-resume.pdf">
+                            <h3>
+                                <i class="fa fa-file-o">&nbsp;</i>CV
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/research/">
+                            <h3>
+                                <i class="fa fa-pie-chart">&nbsp;</i>Research
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/software/">
+                            <h3>
+                                <i class="fa fa-cogs">&nbsp;</i>Software
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Updates</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/spectra-classification/">Classification using Persistence Images</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-04-20'>
+                                    April 20, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/persistent-homology/">Introduction to persistent homology</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-12-06'>
+                                    December 6, 2017</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/towers-basics/">Nerves and Towers I: Introduction</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-12-06'>
+                                    December 6, 2017</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/towers-nerves/">Nerves and Towers II: Nerves</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-12-02'>
+                                    December 2, 2017</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fpersistent-homology%2f&amp;text=Introduction%20to%20persistent%20homology&amp;via=_ropthe_" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//plus.google.com/share?url=%2fblog%2fpersistent-homology%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fpersistent-homology%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//reddit.com/submit?url=%2fblog%2fpersistent-homology%2f&amp;title=Introduction%20to%20persistent%20homology" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fpersistent-homology%2f&amp;title=Introduction%20to%20persistent%20homology" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=%2fblog%2fpersistent-homology%2f&amp;title=Introduction%20to%20persistent%20homology" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=%2fblog%2fpersistent-homology%2f&amp;description=Introduction%20to%20persistent%20homology" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Nathaniel%20Saul&amp;body=%2fblog%2fpersistent-homology%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/persistent-homology/">Introduction to persistent homology</a></h1>
+            
+        
+        
+            <p>Persistence 101.</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2017-12-06'>
+            December 6, 2017</time>
+        <span class="author">Nathaniel Saul</span>
+        
+            <p>1 minute read</p>
+        
+
+        
+    </div>
+</header>
+
+
+  
+
+  
+
+  <div id="content">
+    <ul>
+<li>Intuitive explanation of holes in a dataset.</li>
+<li>how homology captures those holes.</li>
+<li>computing the holes in a simplicial complex</li>
+<li>ideas of persistence - most persistent holes as we grow the simplicial complex</li>
+
+<li><p>how to interpret persistence diagrams.</p></li>
+
+<li><p>Focus on how to use</p></li>
+</ul>
+
+<p>Ideally, all you’ll need in some intuition about what homology is if you want to use the libraries. We’re trying to make them very accessible to the general data science community, not just algebraic topology researchers.</p>
+
+<p>The basic idea is that persistent homology generates a multi scale summary of the holes in a dataset. H0 captures information about connected components (think clusters). The same notions can be extended to higher dimensional holes. A hole in the center of a donut is a 1d hole and the void in the middle of a basketball is a 2d hole.</p>
+
+<p>So, ripser will give you a summary, persim converts this summary into a stable vector representation that can be used in ML algorithms, and cyclonysus will extract some of the data that forms a hole you’re interested in.</p>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="/tags/persistent-homology">Persistent homology</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/tda">TDA</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/math">Math</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="/blog/towers-basics/"
+                class="button big previous">Nerves and Towers I: Introduction</a></li>
+    
+
+    
+        <li><a href="/blog/spectra-classification/"
+                class="button big next">Classification using Persistence Images</a></li>
+    
+</ul>
+
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/' class="logo"><img src="/img/main/logo.jpg" alt="Around About" /></a>
+      
+    
+    
+      <header>
+        <h2>Nathaniel Saul</h2>
+        <p>An introduction to circular thinking and categorical errors <i class='fa fa-space-shuttle'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+          
+    <li><a href="/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/sauln" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/_ropthe_" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//scholar.google.com/citations?user=vMsDzgwAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+
+
+
+
+
+
+
+  <li><a href="mailto:nat@saulgill.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+ 
+ 
+ 
+   
+   
+   
+ 
+
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Updates</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+
+        
+        <section id="mini-bio">
+            <time class="published" datetime='2018-06-15'>June 2018</time>:
+          <p>   
+            I presented my work on stitching mappers together at the Sympossium on Computational Geometry's Young Researchers Forum. The work was in collaboration with Bei Wang and Bala Krishnamoorthy and we plan on releasing complete work soon..
+          </p>
+            
+          </section>
+
+          
+              
+              
+              
+              
+                
+              
+            
+            
+            
+        
+
+        
+        <section id="mini-bio">
+            <time class="published" datetime='2018-04-30'>April 2018</time>:
+          <p>   
+            My work on stitching mappers together along filter functions was accepted to the Symposium on Computational Geometry's Young Researchers Forum. (In collaboration with Bei Wang and Bala Krishnamoorthy.)
+          </p>
+            
+          </section>
+
+          
+              
+              
+              
+              
+                
+              
+            
+            
+            
+        
+
+        
+        <section id="mini-bio">
+            <time class="published" datetime='2018-04-12'>April 2018</time>:
+          <p>   
+            I won second place at WSUV Research Showcase for my talk on exploring high-dimensional data with Mapper.
+          </p>
+            
+          </section>
+
+          
+              
+              
+              
+              
+                
+              
+            
+            
+            
+        
+
+        
+        <section id="mini-bio">
+            <time class="published" datetime='2018-03-15'>March 2018</time>:
+          <p>   
+            I was awarded the NASA Space Grant Fellowship to apply TDA to classifification of galaxies.
+          </p>
+            
+          </section>
+
+          
+              
+              
+              
+              
+                
+              
+            
+            
+            
+        
+      </div>
+
+      
+        <a href=
+            "/updates/"
+        class="button">View older updates</a>
+      
+    </div>
+  </section>
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          
+    <li><a href="/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a></li>
+
+
+        
+        
+  <li><a href="//github.com/sauln" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/_ropthe_" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//scholar.google.com/citations?user=vMsDzgwAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+
+
+
+
+
+
+
+  <li><a href="mailto:nat@saulgill.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2018
+        
+          Nathaniel Saul | Around About
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+
+      
+
+<script type="text/javascript" src="https://cdn.rawgit.com/pcooksey/bibtex-js/abeec72eb0501d2f6ae41ed4f778b4a60e75984f/src/bibtex_js.js"></script>
+
+
+
+<div class="bibtex_template">
+    <div class="if author" style="font-weight: bold;">
+        <span class="author"></span>,
+        <span class="if year">
+        <span class="year"></span>
+        </span>
+
+        
+    </div>
+    <div style="margin-left: 10px; margin-bottom:5px;">
+        <span class="title"></span>
+    </div>
+</div>
+
+  </body>
+</html>
+

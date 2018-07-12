@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Persistent homology on Nathaniel Saul | Around About</title>
+    <link>/tags/persistent-homology/</link>
+    <description>Recent content in Persistent homology on Nathaniel Saul | Around About</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/persistent-homology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to persistent homology</title>
+      <link>/blog/persistent-homology/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/persistent-homology/</guid>
+      <description>Intuitive explanation of holes in a dataset. how homology captures those holes. computing the holes in a simplicial complex ideas of persistence - most persistent holes as we grow the simplicial complex how to interpret persistence diagrams.
+ Focus on how to use
+  Ideally, all you’ll need in some intuition about what homology is if you want to use the libraries. We’re trying to make them very accessible to the general data science community, not just algebraic topology researchers.</description>
+    </item>
+    
+  </channel>
+</rss>

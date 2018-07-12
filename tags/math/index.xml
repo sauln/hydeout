@@ -6,10 +6,31 @@
     <description>Recent content in Math on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Classification using Persistence Images</title>
+      <link>/blog/spectra-classification/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/spectra-classification/</guid>
+      <description>Galaxies Disclaimer: This sort of feature engineering turned out to be a bit overkill for this project, but it does provide a nice, easy to understand, demonstration of how to use the methods.
+Background In an effort to make sense of the torrent of data coming from the James Webb Telescope, we need fast and reliable ways to classifying and sifting through the data. At the Code for Good conference in 2017, I was involved with a project to help astrophysics categorize and curate these galaxy images.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to persistent homology</title>
+      <link>/blog/persistent-homology/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/persistent-homology/</guid>
+      <description>Intuitive explanation of holes in a dataset. how homology captures those holes. computing the holes in a simplicial complex ideas of persistence - most persistent holes as we grow the simplicial complex how to interpret persistence diagrams.
+ Focus on how to use
+  Ideally, all you’ll need in some intuition about what homology is if you want to use the libraries. We’re trying to make them very accessible to the general data science community, not just algebraic topology researchers.</description>
+    </item>
     
     <item>
       <title>Nerves and Towers I: Introduction</title>

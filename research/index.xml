@@ -17,34 +17,8 @@
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/research/galaxies/</guid>
-      <description>I was awarded a NASA space grant through WSU to develop methods using Topological Data Analysis for classifying galaxies that have WR-bumps or not. More information about this project will be coming soon.</description>
-    </item>
-    
-    <item>
-      <title>Kepler Mapper</title>
-      <link>/research/kepler-mapper/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/research/kepler-mapper/</guid>
-      <description>I work on Kepler Mapper.</description>
-    </item>
-    
-    <item>
-      <title>Persim</title>
-      <link>/research/persim/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/research/persim/</guid>
-      <description>I work on Persim, a library for persistence images in Python that can be used with Dionysus or Ripser.</description>
-    </item>
-    
-    <item>
-      <title>Ripser</title>
-      <link>/research/ripser/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/research/ripser/</guid>
-      <description>I work on Ripser, more specifically, the Python wrapper of Ripser.</description>
+      <description>I was awarded a NASA space grant through WSU to develop methods using Topological Data Analysis for classifying galaxies that have WR-bumps or not.
+Check out my blog post Classification using Persistence Images for a walk through on the methods I used.</description>
     </item>
     
   </channel>

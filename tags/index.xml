@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Classification</title>
+      <link>/tags/classification/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/classification/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Mapper</title>
@@ -23,7 +32,7 @@
     <item>
       <title>Math</title>
       <link>/tags/math/</link>
-      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/math/</guid>
       <description></description>
@@ -39,6 +48,33 @@
     </item>
     
     <item>
+      <title>Persistence</title>
+      <link>/tags/persistence/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/persistence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Persistence images</title>
+      <link>/tags/persistence-images/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/persistence-images/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Persistent homology</title>
+      <link>/tags/persistent-homology/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/persistent-homology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Software design</title>
       <link>/tags/software-design/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
@@ -50,7 +86,7 @@
     <item>
       <title>TDA</title>
       <link>/tags/tda/</link>
-      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/tda/</guid>
       <description></description>

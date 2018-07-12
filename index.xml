@@ -6,18 +6,37 @@
     <description>Recent content on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My work on stitching mappers together along filter functions was accepted to the Symposium on Computational Geometry&#39;s Young Researchers Forum. (In collaboration with Bei Wang and Bala Krishnamoorthy.</title>
-      <link>/updates/socg/</link>
+      <title>I presented my work on stitching mappers together at the Sympossium on Computational Geometry&#39;s Young Researchers Forum. The work was in collaboration with Bei Wang and Bala Krishnamoorthy and we plan on releasing complete work soon..</title>
+      <link>/updates/socg-presented/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/socg-presented/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My work on stitching mappers together along filter functions was accepted to the Symposium on Computational Geometry&#39;s Young Researchers Forum. (In collaboration with Bei Wang and Bala Krishnamoorthy.)</title>
+      <link>/updates/socg-accepted/</link>
       <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/updates/socg/</guid>
+      <guid>/updates/socg-accepted/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Classification using Persistence Images</title>
+      <link>/blog/spectra-classification/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/spectra-classification/</guid>
+      <description>Galaxies Disclaimer: This sort of feature engineering turned out to be a bit overkill for this project, but it does provide a nice, easy to understand, demonstration of how to use the methods.
+Background In an effort to make sense of the torrent of data coming from the James Webb Telescope, we need fast and reliable ways to classifying and sifting through the data. At the Code for Good conference in 2017, I was involved with a project to help astrophysics categorize and curate these galaxy images.</description>
     </item>
     
     <item>
@@ -45,6 +64,17 @@
       
       <guid>/updates/pnnl-internship/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Introduction to persistent homology</title>
+      <link>/blog/persistent-homology/</link>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/persistent-homology/</guid>
+      <description>Intuitive explanation of holes in a dataset. how homology captures those holes. computing the holes in a simplicial complex ideas of persistence - most persistent holes as we grow the simplicial complex how to interpret persistence diagrams.
+ Focus on how to use
+  Ideally, all you’ll need in some intuition about what homology is if you want to use the libraries. We’re trying to make them very accessible to the general data science community, not just algebraic topology researchers.</description>
     </item>
     
     <item>
@@ -120,34 +150,37 @@ By using test driven development, we can redefine the develop-debug process to c
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/research/galaxies/</guid>
-      <description>I was awarded a NASA space grant through WSU to develop methods using Topological Data Analysis for classifying galaxies that have WR-bumps or not. More information about this project will be coming soon.</description>
+      <description>I was awarded a NASA space grant through WSU to develop methods using Topological Data Analysis for classifying galaxies that have WR-bumps or not.
+Check out my blog post Classification using Persistence Images for a walk through on the methods I used.</description>
     </item>
     
     <item>
       <title>Kepler Mapper</title>
-      <link>/research/kepler-mapper/</link>
+      <link>/software/kepler-mapper/</link>
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/research/kepler-mapper/</guid>
-      <description>I work on Kepler Mapper.</description>
+      <guid>/software/kepler-mapper/</guid>
+      <description>I actively maintain Kepler Mapper, a popular Python library for creating and visualizing Mappers. We provide a scikit-learn style API that is intuitive and approachable for data scientists and machine learning researchers.
+Try it out:
+pip install kmapper  </description>
     </item>
     
     <item>
       <title>Persim</title>
-      <link>/research/persim/</link>
+      <link>/software/persim/</link>
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/research/persim/</guid>
-      <description>I work on Persim, a library for persistence images in Python that can be used with Dionysus or Ripser.</description>
+      <guid>/software/persim/</guid>
+      <description>I developed and maintain Persim, a library for computing persistence images of persistence diagrams.</description>
     </item>
     
     <item>
       <title>Ripser</title>
-      <link>/research/ripser/</link>
+      <link>/software/ripser/</link>
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/research/ripser/</guid>
-      <description>I work on Ripser, more specifically, the Python wrapper of Ripser.</description>
+      <guid>/software/ripser/</guid>
+      <description>I help maintain the Python wrapper for Ripser. My contribution have been dev-ops focused, spending most of my time on building intuitive Python interface, visualization functionality, deployment and packaging, and automated testing and continuous integration.</description>
     </item>
     
     <item>

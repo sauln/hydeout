@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Nathaniel Saul | Around About</title>
+    <link>/software/</link>
+    <description>Recent content in Software on Nathaniel Saul | Around About</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kepler Mapper</title>
+      <link>/software/kepler-mapper/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/software/kepler-mapper/</guid>
+      <description>I actively maintain Kepler Mapper, a popular Python library for creating and visualizing Mappers. We provide a scikit-learn style API that is intuitive and approachable for data scientists and machine learning researchers.
+Try it out:
+pip install kmapper  </description>
+    </item>
+    
+    <item>
+      <title>Persim</title>
+      <link>/software/persim/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/software/persim/</guid>
+      <description>I developed and maintain Persim, a library for computing persistence images of persistence diagrams.</description>
+    </item>
+    
+    <item>
+      <title>Ripser</title>
+      <link>/software/ripser/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/software/ripser/</guid>
+      <description>I help maintain the Python wrapper for Ripser. My contribution have been dev-ops focused, spending most of my time on building intuitive Python interface, visualization functionality, deployment and packaging, and automated testing and continuous integration.</description>
+    </item>
+    
+  </channel>
+</rss>
