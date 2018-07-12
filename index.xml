@@ -57,17 +57,6 @@
     </item>
     
     <item>
-      <title>Introduction to persistent homology</title>
-      <link>/blog/persistent-homology/</link>
-      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/persistent-homology/</guid>
-      <description>Intuitive explanation of holes in a dataset. how homology captures those holes. computing the holes in a simplicial complex ideas of persistence - most persistent holes as we grow the simplicial complex how to interpret persistence diagrams.
- Focus on how to use
-  Ideally, all you’ll need in some intuition about what homology is if you want to use the libraries. We’re trying to make them very accessible to the general data science community, not just algebraic topology researchers.</description>
-    </item>
-    
-    <item>
       <title>Nerves and Towers I: Introduction</title>
       <link>/blog/towers-basics/</link>
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
