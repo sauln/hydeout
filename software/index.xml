@@ -17,9 +17,7 @@
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/software/kepler-mapper/</guid>
-      <description>I actively maintain Kepler Mapper, a popular Python library for creating and visualizing Mappers. We provide a scikit-learn style API that is intuitive and approachable for data scientists and machine learning researchers.
-Try it out:
-pip install kmapper  </description>
+      <description>I actively maintain Kepler Mapper, a popular Python library for creating and visualizing Mappers. We provide a scikit-learn style API that is intuitive and approachable for data scientists and machine learning researchers. Check out the documentation.</description>
     </item>
     
     <item>
@@ -28,7 +26,7 @@ pip install kmapper  </description>
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/software/persim/</guid>
-      <description>I developed and maintain Persim, a library for computing persistence images of persistence diagrams.</description>
+      <description>I developed Persim, a library for computing persistence images of persistence diagrams. To learn more, check out the documentation page or see the source on github.</description>
     </item>
     
     <item>
@@ -37,7 +35,17 @@ pip install kmapper  </description>
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/software/ripser/</guid>
-      <description>I help maintain the Python wrapper for Ripser. My contribution have been dev-ops focused, spending most of my time on building intuitive Python interface, visualization functionality, deployment and packaging, and automated testing and continuous integration.</description>
+      <description>I help maintain the Python wrapper for Ripser, a blazingly fast c++ project originally developed by Ulrich Bauer.
+My contribution have been dev-ops focused, spending most of my time on building an intuitive Python interface, visualization functionality, deployment and packaging, and automated testing and continuous integration.</description>
+    </item>
+    
+    <item>
+      <title>TaDAsets</title>
+      <link>/software/tadasets/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/software/tadasets/</guid>
+      <description>TaDAsets is a project intended to provide easy to use data sets for demonstrating and exploring analytics techniques. The goal is to provide constructors for many common topological objects. Check out the documentation or the source code on github</description>
     </item>
     
   </channel>

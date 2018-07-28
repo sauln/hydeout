@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/research/stitching/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/updates/socg-presented/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
   </url>
@@ -78,6 +83,11 @@
   </url>
   
   <url>
+    <loc>/software/tadasets/</loc>
+    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/law-of-demeter/</loc>
     <lastmod>2017-09-10T00:00:00+00:00</lastmod>
   </url>
@@ -117,7 +127,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -127,8 +137,7 @@
   
   <url>
     <loc>/research/</loc>
-    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
