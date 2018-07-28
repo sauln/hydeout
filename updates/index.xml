@@ -6,63 +6,72 @@
     <description>Recent content in Updates on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/updates/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>I presented my work on stitching mappers together at the Sympossium on Computational Geometry&#39;s Young Researchers Forum. The work was in collaboration with Bei Wang and Bala Krishnamoorthy and we plan on releasing complete work soon..</title>
+      <title></title>
+      <link>/updates/scikit-tda/</link>
+      <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/scikit-tda/</guid>
+      <description>Scikit-tda.org is live!</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/updates/socg-presented/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/updates/socg-presented/</guid>
-      <description></description>
+      <description>I presented my work on stitching mappers together at the Young Researchers Forum at the Sympossium on Computational Geometry.</description>
     </item>
     
     <item>
-      <title>My work on stitching mappers together along filter functions was accepted to the Symposium on Computational Geometry&#39;s Young Researchers Forum. (In collaboration with Bei Wang and Bala Krishnamoorthy.)</title>
+      <title></title>
       <link>/updates/socg-accepted/</link>
       <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/updates/socg-accepted/</guid>
-      <description></description>
+      <description>My work abstract was accepted to the Symposium on Computational Geometry&amp;rsquo;s Young Researchers Forum.</description>
     </item>
     
     <item>
-      <title>I won second place at WSUV Research Showcase for my talk on exploring high-dimensional data with Mapper.</title>
+      <title></title>
       <link>/updates/research-showcase/</link>
       <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/updates/research-showcase/</guid>
-      <description></description>
+      <description>I won second place at the WSUV Research Showcase for my talk on exploring high-dimensional data with Mapper.</description>
     </item>
     
     <item>
-      <title>I was awarded the NASA Space Grant Fellowship to apply TDA to classifification of galaxies.</title>
+      <title></title>
       <link>/updates/nasa-grant/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/updates/nasa-grant/</guid>
-      <description></description>
+      <description>I was awarded the NASA Space Grant Fellowship to apply TDA to classification of galaxies.</description>
     </item>
     
     <item>
-      <title>I have accepted an internship with the Visual Analytics group at Pacific Northwest National Laboratories for the summer 2018.</title>
+      <title></title>
       <link>/updates/pnnl-internship/</link>
       <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/updates/pnnl-internship/</guid>
-      <description></description>
+      <description>I will be joining the Visual Analytics Group at Pacific Northwest National Laboratories as a Research Intern for the summer.</description>
     </item>
     
     <item>
-      <title>I passed my Graduate Qualifying Exams!</title>
+      <title></title>
       <link>/updates/passed-gqe/</link>
       <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/updates/passed-gqe/</guid>
-      <description></description>
+      <description>I passed my Graduate Qualifying Exams!</description>
     </item>
     
   </channel>
