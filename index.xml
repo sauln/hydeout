@@ -6,10 +6,19 @@
     <description>Recent content on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>/updates/visxai/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/visxai/</guid>
+      <description>My work on using Mapper to visualize machine learning models was accepted to IEEE Vis VISxAI Workshop!</description>
+    </item>
     
     <item>
       <title></title>
@@ -17,7 +26,17 @@
       <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>/updates/scikit-tda/</guid>
-      <description>Scikit-tda.org is live!</description>
+      <description>Scikit-tda.org is live! More details about the project are coming soon!</description>
+    </item>
+    
+    <item>
+      <title>Explainable Machine Learning with Mapper</title>
+      <link>/research/explainable/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/research/explainable/</guid>
+      <description>While visiting Pacific Northwest National Laboratory, I collaborated with Dustin L. Arendt to develop new ways Mapper could be applied for explaining machine learning models.
+Initial progress in this direction will be a part of the IEEE VIS 2018 Workshop on VISxAI.</description>
     </item>
     
     <item>
@@ -36,7 +55,7 @@ I presented preliminary results of this work at the Young Researchers Forum at S
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/updates/socg-presented/</guid>
-      <description>I presented my work on stitching mappers together at the Young Researchers Forum at the Sympossium on Computational Geometry.</description>
+      <description>I presented my work on stitching mappers together at the Young Researchers Forum at the Symposium on Computational Geometry.</description>
     </item>
     
     <item>
@@ -162,13 +181,13 @@ Check out my blog post Classification using Persistence Images for a walk throug
     </item>
     
     <item>
-      <title>Ripser</title>
+      <title>Ripser.py</title>
       <link>/software/ripser/</link>
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/software/ripser/</guid>
-      <description>I help maintain the Python wrapper for Ripser, a blazingly fast c++ project originally developed by Ulrich Bauer.
-My contribution have been dev-ops focused, spending most of my time on building an intuitive Python interface, visualization functionality, deployment and packaging, and automated testing and continuous integration.</description>
+      <description>Along with Christopher Tralie, I help maintain the Python wrapper for Ripser, a blazingly fast c++ project originally developed by Ulrich Bauer.
+My contribution have been user focused, spending most of my time on building an intuitive Python interface, visualization functionality, deployment and packaging, and automated testing and continuous integration.</description>
     </item>
     
     <item>

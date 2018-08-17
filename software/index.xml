@@ -30,13 +30,13 @@
     </item>
     
     <item>
-      <title>Ripser</title>
+      <title>Ripser.py</title>
       <link>/software/ripser/</link>
       <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/software/ripser/</guid>
-      <description>I help maintain the Python wrapper for Ripser, a blazingly fast c++ project originally developed by Ulrich Bauer.
-My contribution have been dev-ops focused, spending most of my time on building an intuitive Python interface, visualization functionality, deployment and packaging, and automated testing and continuous integration.</description>
+      <description>Along with Christopher Tralie, I help maintain the Python wrapper for Ripser, a blazingly fast c++ project originally developed by Ulrich Bauer.
+My contribution have been user focused, spending most of my time on building an intuitive Python interface, visualization functionality, deployment and packaging, and automated testing and continuous integration.</description>
     </item>
     
     <item>

@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Explainable Machine Learning with Mapper</title>
+      <link>/research/explainable/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/research/explainable/</guid>
+      <description>While visiting Pacific Northwest National Laboratory, I collaborated with Dustin L. Arendt to develop new ways Mapper could be applied for explaining machine learning models.
+Initial progress in this direction will be a part of the IEEE VIS 2018 Workshop on VISxAI.</description>
+    </item>
+    
+    <item>
       <title>Sewing with Topology</title>
       <link>/research/stitching/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>

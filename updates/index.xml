@@ -6,10 +6,19 @@
     <description>Recent content in Updates on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/updates/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>/updates/visxai/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/visxai/</guid>
+      <description>My work on using Mapper to visualize machine learning models was accepted to IEEE Vis VISxAI Workshop!</description>
+    </item>
     
     <item>
       <title></title>
@@ -17,7 +26,7 @@
       <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>/updates/scikit-tda/</guid>
-      <description>Scikit-tda.org is live!</description>
+      <description>Scikit-tda.org is live! More details about the project are coming soon!</description>
     </item>
     
     <item>
@@ -26,7 +35,7 @@
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/updates/socg-presented/</guid>
-      <description>I presented my work on stitching mappers together at the Young Researchers Forum at the Sympossium on Computational Geometry.</description>
+      <description>I presented my work on stitching mappers together at the Young Researchers Forum at the Symposium on Computational Geometry.</description>
     </item>
     
     <item>
