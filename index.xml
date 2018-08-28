@@ -6,10 +6,19 @@
     <description>Recent content on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Čech complex playground</title>
+      <link>/blog/nerve-playground/</link>
+      <pubDate>Tue, 28 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/nerve-playground/</guid>
+      <description>.active { stroke: #000; stroke-width: 2px; } .ticks { font: 10px sans-serif; } .track, .track-inset, .track-overlay { stroke-linecap: round; } .track { stroke: #000; stroke-opacity: 0.3; stroke-width: 10px; } .track-inset { stroke: #ddd; stroke-width: 8px; } .track-overlay { pointer-events: stroke; stroke-width: 50px; stroke: transparent; cursor: crosshair; } .handle { fill: #fff; stroke: #000; stroke-opacity: 0.5; stroke-width: 1.25px; }  Čech complexes are one of the main tools for building a simplicial complex from data, and in turn is regularly used in Persistent Homology.</description>
+    </item>
     
     <item>
       <title></title>

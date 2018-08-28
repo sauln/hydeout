@@ -1,0 +1,1285 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "/"
+        },
+        "articleSection" : "blog",
+        "name" : "Čech complex playground",
+        "headline" : "Čech complex playground",
+        "description" : "Some tools for understanding nerves and persistence",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2018",
+        "datePublished": "2018-08-28 00:00:00 &#43;0000 UTC",
+        "dateModified" : "2018-08-28 00:00:00 &#43;0000 UTC",
+        "url" : "/blog/nerve-playground/",
+        "wordCount" : "388",
+        "keywords" : [ "data visualization","Blog" ]
+    }
+    </script>
+        
+            
+                <title>Čech complex playground</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.39" />
+        
+
+
+        
+        
+            <meta name="description" content="Some tools for understanding nerves and persistence">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Čech complex playground"/>
+<meta name="twitter:description" content="Some tools for understanding nerves and persistence"/>
+<meta name="twitter:site" content="@NathanielSaul"/>
+
+        <meta property="og:title" content="Čech complex playground" />
+<meta property="og:description" content="Some tools for understanding nerves and persistence" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/nerve-playground/" />
+
+
+
+<meta property="article:published_time" content="2018-08-28T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2018-08-28T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        
+<meta itemprop="name" content="Čech complex playground">
+<meta itemprop="description" content="Some tools for understanding nerves and persistence">
+
+
+<meta itemprop="datePublished" content="2018-08-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-08-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="388">
+
+
+
+<meta itemprop="keywords" content="data visualization," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-101939399-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/docs/saul-resume.pdf">
+                            <i class="fa fa-file-o">&nbsp;</i>CV
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/research/">
+                            <i class="fa fa-pie-chart">&nbsp;</i>Research
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/software/">
+                            <i class="fa fa-cogs">&nbsp;</i>Software
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/docs/saul-resume.pdf">
+                            <h3>
+                                <i class="fa fa-file-o">&nbsp;</i>CV
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/research/">
+                            <h3>
+                                <i class="fa fa-pie-chart">&nbsp;</i>Research
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/software/">
+                            <h3>
+                                <i class="fa fa-cogs">&nbsp;</i>Software
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Updates</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/nerve-playground/">Čech complex playground</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-08-28'>
+                                    August 28, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/towers-basics/">Nerves and Towers I: Introduction</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-12-06'>
+                                    December 6, 2017</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/towers-nerves/">Nerves and Towers II: Nerves</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-12-02'>
+                                    December 2, 2017</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/towers-towers/">Nerves and Towers III: Towers</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-12-01'>
+                                    December 1, 2017</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fnerve-playground%2f&amp;text=%c4%8cech%20complex%20playground&amp;via=NathanielSaul" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//plus.google.com/share?url=%2fblog%2fnerve-playground%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fnerve-playground%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//reddit.com/submit?url=%2fblog%2fnerve-playground%2f&amp;title=%c4%8cech%20complex%20playground" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fnerve-playground%2f&amp;title=%c4%8cech%20complex%20playground" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=%2fblog%2fnerve-playground%2f&amp;title=%c4%8cech%20complex%20playground" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=%2fblog%2fnerve-playground%2f&amp;description=%c4%8cech%20complex%20playground" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Nathaniel%20Saul&amp;body=%2fblog%2fnerve-playground%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/nerve-playground/">Čech complex playground</a></h1>
+            
+        
+        
+            <p>Some tools for understanding nerves and persistence</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2018-08-28'>
+            August 28, 2018</time>
+        <span class="author">Nathaniel Saul</span>
+        
+            <p>2 minute read</p>
+        
+
+        
+    </div>
+</header>
+
+
+  
+
+  
+
+  <div id="content">
+    <style>
+
+
+.active {
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+.ticks {
+  font: 10px sans-serif;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: #000;
+  stroke-opacity: 0.3;
+  stroke-width: 10px;
+}
+
+.track-inset {
+  stroke: #ddd;
+  stroke-width: 8px;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  stroke: transparent;
+  cursor: crosshair;
+}
+  
+.handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+}
+  
+</style>
+
+<p>Čech complexes are one of the main tools for building a simplicial complex from data, and in turn is regularly used in Persistent Homology.
+This post provides an interactive demonstration of the Čech complex of a 2-dimensional data set. It is meant to help newcomers gain an intuition for the complex.</p>
+
+<p>Below the visualization, we sketch out the basic mathematical definitions.</p>
+
+<h3>Visualization</h3>
+
+<p>The resulting simplicial complex is overlaid on top of the covers. Here we only calculate the nerve up to order 2, i.e. vertices, edges, and triangles.</p>
+
+<ul>
+<li>The slider lets you change the radius of the balls and</li>
+<li>the data points can be rearranged by dragging them.</li>
+</ul>
+
+<div id="visual_space"></div>
+
+<h3>Mathematical Background</h3>
+
+<p>The Čech complex of a data set \(X\) with radius \(r\) is defined as the simplicial complex</p>
+
+<p>$$ Č(X) = \big\{ \sigma_I \mid \bigcup_{i \in I} B_r(x_i) \neq \emptyset \big\} $$</p>
+
+<p>All this really says is we add a simplex \(\sigma_I\) on vertices \( \{ x_i\}_{i\in I} \) when balls with radius \(r\) around each vertex all have a nonempty intersection.</p>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+  (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+
+
+    var rotate = function(x,y, theta){
+        return {
+            'x': Math.cos(theta) * x - Math.sin(theta) * y,
+            'y': Math.sin(theta) * x + Math.cos(theta) * y
+        }
+    };
+    var norm2 =  function(a, b){
+        return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
+    };
+    
+    var translate = function(point, dpoint){
+        return {
+            'x': point.x + dpoint.x,
+            'y': point.y + dpoint.y
+        }
+    }
+    
+    
+    var pointInCircle = function(c, p){
+        // Check if p is in circle
+        return norm2(c.x - p.x, c.y - p.y) <= c.r
+    }
+    
+    
+    
+    module.exports = {
+        "rotate": rotate,
+        "norm2": norm2,
+        "translate": translate,
+        "pointInCircle": pointInCircle
+    }
+    },{}],2:[function(require,module,exports){
+    var color = d3.scaleOrdinal()
+        .range(d3.schemeCategory20);
+    
+    module.exports = {
+        'radius': 30,
+        'nCircles': 50,
+        "circleOpacity": 0.5,
+        "triangleOpacity": 0.5,
+        "triangleColor": 'turquoise',
+        "edgeColor": 'black',
+        "nodeColor": 'black',
+        "blobColor": 'orange', //function(d, i) { return color(i); };
+        "timeSteps": 150,
+        "momentum": 0.8,
+        "offset": 0.5, // how far each blob moves
+        "persistenceStepSize":1
+    }
+    },{}],3:[function(require,module,exports){
+    var configs = require('./config');
+    var nervePieces = require('./nervePieces.js');
+    
+var parentDiv = document.getElementById("visual_space");
+var svg = d3.select(parentDiv).append("svg");
+
+    // var svg = d3.select("svg");
+  var width = parentDiv.clientWidth * 0.7;
+  var height = 600
+
+  console.log("content has width" + width)
+//   var height = parentDiv.clientHeight;
+
+    svg.attr('width', width)
+    .attr('height', height)
+    // svg.attr("preserveAspectRatio", "xMinYMin meet")
+    //     .attr("viewBox", "0 0 960 500")
+    
+var parentDiv = document.getElementById("parentDiv");
+
+    var margin = {right: 0, left: 50, top: 20, bottom: 50},
+        width = +svg.attr("width") - margin.left - margin.right,
+        height = +svg.attr("height");
+    
+    var circles = nervePieces.randomCircles(configs, width, height);
+    
+    nervePieces.drawNodes(svg, circles, configs)
+        .call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended));
+    
+    function dragstarted(d) {
+      d3.select(this).raise().classed("active", true);
+    }
+    
+    function dragged(d) {
+      d3.select(this).select(".blob")
+        .attr("cx", d.x = d3.event.x)
+        .attr("cy", d.y = d3.event.y);
+    
+      d3.select(this).select(".vertex")
+        .attr("cx", d.x = d3.event.x)
+        .attr("cy", d.y = d3.event.y);
+    
+        nervePieces.drawNerve(svg, circles)
+    }
+    
+    function dragended(d) {
+      d3.select(this).classed("active", false);
+    } 
+    
+    nervePieces.drawNerve(svg, circles)
+    
+    var topRange = 100,
+        bottomRange = 5;
+    
+    /// Handle slider
+    var x = d3.scaleLinear()
+      .domain([bottomRange, topRange])
+      .range([0, width / 2])
+      .clamp(true);
+    
+    var slider = svg.append("g")
+      .attr("class", "slider")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
+    slider.append("line")
+      .attr("class", "track")
+      .attr("x1", x.range()[0])
+      .attr("x2", x.range()[1])
+      .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+      .attr("class", "track-inset")
+      .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+      .attr("class", "track-overlay")
+      .call(d3.drag()
+          .on("start.interrupt", function() { slider.interrupt(); })
+          .on("start drag", function() { change_r(x.invert(d3.event.x)); }));
+    
+    var handle = slider.insert("circle", ".track-overlay")
+      .attr("class", "handle")
+      .attr("r", 9);
+    
+    slider.transition() // Gratuitous intro!
+      .duration(750)
+      .tween("change_r", function() {
+        var i = d3.interpolate(bottomRange, (topRange - bottomRange)/2+bottomRange);
+        return function(t) { change_r(i(t)); };
+    });
+    
+    function change_r(r) {
+      handle.attr("cx", x(r));
+    
+      circles.forEach(d => {d.r = r});
+    
+      // Update the circles' positions according to the data.
+      var gs = d3.selectAll("g");
+      gs.select(".blob")
+        .attr("r", d=>d.r);
+    
+      nervePieces.drawNerve(svg, circles);
+    }
+    
+    
+    
+    
+    
+    
+    
+    },{"./config":2,"./nervePieces.js":5}],4:[function(require,module,exports){
+    var basicmath = require('./basicmath');
+    
+    var nerveCondition2 =  function(a, b){
+        // check that points a and b satisfy the nerve condition
+        var distance = basicmath.norm2(a.x - b.x, a.y - b.y)
+        return distance <= (a.r + b.r);
+    };
+    
+    
+    var circleIntersections = function(circleA, circleB){
+    
+        var root = circleB.x < circleA.x ? circleB : circleA
+    
+        // assume circles are both along the x-axis, no y coordinate
+        var d = Math.sqrt( Math.pow(circleA.x - circleB.x, 2) + Math.pow(circleA.y - circleB.y, 2)) / 2
+        var y = Math.sqrt( Math.pow(root.r, 2) - Math.pow(d, 2))
+    
+        dx = (circleB.x - circleA.x) / 2.0
+        dy = (circleB.y - circleA.y) / 2.0
+    
+        var angle = Math.atan(dy / dx)
+        point1 = basicmath.rotate(d, y, angle)
+        point2 = basicmath.rotate(d, -y, angle)
+        point1 = basicmath.translate(point1, root)
+        point2 = basicmath.translate(point2, root)
+        return [point1, point2]
+    }
+    
+    var nerveCondition3 = function(a, b, c){
+        if (nerveCondition2(a, b) && 
+            nerveCondition2(b, c) && 
+            nerveCondition2(a, c)){
+            intersections1 = circleIntersections(a,b)
+            intersections2 = circleIntersections(a,c)
+            intersections3 = circleIntersections(b,c)
+            if (basicmath.pointInCircle(c, intersections1[0]) || 
+                basicmath.pointInCircle(c, intersections1[1]) ||
+                basicmath.pointInCircle(b, intersections2[0]) || 
+                basicmath.pointInCircle(b, intersections2[1]) || 
+                basicmath.pointInCircle(a, intersections3[0]) || 
+                basicmath.pointInCircle(a, intersections3[1])) {
+            return true
+            } else {
+            return false
+            }
+        } else {
+            return false
+        }
+    }
+      
+    
+    var findTriangles = function(nodes, circles, radius){
+        // Find all valid triangles in nerve
+        trianglesData = []
+        for (i = 0; i < nodes.length - 2; i += 1){
+          for (j = i+1; j < nodes.length - 1; j += 1){
+            for (k = j+1; k < nodes.length; k += 1){
+              if (nerveCondition3(circles[nodes[i]], circles[nodes[j]], circles[nodes[k]], radius)){
+                trianglesData.push({"a": nodes[i], "b": nodes[j], "c": nodes[k]})
+              }
+            }
+          }
+        }
+        return trianglesData
+    }
+    
+    
+    var findEdges = function(circles, radius){
+        // Find all valid edges in nerve
+        edgesData = []
+        for (var i=0; i < circles.length - 1; i += 1){
+            for (var j=i+1; j < circles.length; j += 1){
+            if (nerveCondition2(circles[i], circles[j], radius)){
+                edgesData.push({"s": i, "t": j})
+            }
+            }
+        }
+        return edgesData
+    } 
+      
+      
+    module.exports = {
+        "findTriangles": findTriangles,
+        "findEdges": findEdges,
+    }
+    },{"./basicmath":1}],5:[function(require,module,exports){
+    // var basicmath = require('./basicmath.js');
+    var nerveComps = require('./nerveComputations.js');
+    var configs = require('./config');
+    
+    var randomCircles = function(configs, width, height){
+      var circles = d3.range(configs.nCircles).map(function() {
+        return {
+          x: Math.round(Math.random() * (width - configs.radius * 2) + configs.radius),
+          y: Math.round(Math.random() * (height - configs.radius * 2) + configs.radius),
+          r: configs.radius,
+          dx: Math.random(),
+          dy: Math.random(),
+        };
+      });
+    
+      return circles
+    };
+    
+    
+    
+    
+    // Update edge data
+    var addEdges = function(svg, edgesData, circles){
+      svg.selectAll(".edge").remove();
+    
+      svg.selectAll(".edge")
+        .data(edgesData).enter().append('path')
+        .attr("class", "edge")
+        .attr('d', function(d) {
+            return 'M '+circles[d.s].x+' '+circles[d.s].y+' L '+ circles[d.t].x +' '+circles[d.t].y
+        })
+        .attr("stroke", configs.edgeColor)
+        .attr("stroke-width", 2)
+    }
+    
+    var addTriangles = function(svg, triangleData, circles){
+      svg.selectAll(".triangle").remove();
+    
+      svg.selectAll(".triangle")
+        .data(triangleData).enter().append('polygon')
+        .attr("class", "triangle")
+        .attr("points", function(d){
+          return ''+circles[d.a].x+","+circles[d.a].y+" "+circles[d.b].x+","+circles[d.b].y+" "+circles[d.c].x+","+circles[d.c].y+" "
+        })
+        // .transition()
+        // .duration(1250)
+        .attr("fill", configs.triangleColor)
+        .attr("fill-opacity", configs.triangleOpacity)
+        .attr("stroke", "purple")
+        .attr("stroke-width", 1)
+    }
+    
+    var flattenEdges = function(edges){
+      // Find a set of all edges
+      ed = new Set();
+      for (var i = 0; i < edges.length; i += 1){
+        ed.add(edges[i].s);
+        ed.add(edges[i].t);
+      }
+      
+      return Array.from(ed)
+    }
+    
+    var drawNerve = function(svg, circles){
+      // Draw edges and triangles
+      var edgesData = nerveComps.findEdges(circles, configs.radius)
+      addEdges(svg, edgesData, circles)
+    
+      if (edgesData.length > 0){
+        nodesInEdges = flattenEdges(edgesData)
+        triangles = nerveComps.findTriangles(nodesInEdges, circles, configs.radius)
+        addTriangles(svg, triangles, circles)
+      }
+      // bring vertices to the front
+      svg.selectAll(".vertex").enter();
+    }
+    
+    var drawNodes = function(svg, circles, configs){
+      var group = svg.selectAll('g')
+        .data(circles)
+        .enter().append("g")
+    
+      group.append("circle")
+        .attr("class", "blob")
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .attr("r", configs.radius)
+        .attr("fill-opacity", configs.circleOpacity)
+        .style("fill", configs.blobColor)
+    
+      group.append("circle")
+        .attr("class", "vertex")
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .attr("r", 5)
+        .style("fill", configs.nodeColor);
+    
+      return group;
+    }
+    
+    
+    module.exports = {
+      'drawNerve': drawNerve,
+      'drawNodes': drawNodes,
+      'randomCircles': randomCircles
+    }
+    
+    },{"./config":2,"./nerveComputations.js":4}]},{},[3]);
+    
+
+</script>  
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="/tags/data-visualization">data visualization</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="/blog/towers-basics/"
+                class="button big previous">Nerves and Towers I: Introduction</a></li>
+    
+
+    
+</ul>
+
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/' class="logo"><img src="/img/main/logo.jpg" alt="Around About" /></a>
+      
+    
+    
+      <header>
+        <h2>Nathaniel Saul</h2>
+        <p>An introduction to circular thinking <i class='fa fa-space-shuttle'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+  <li><a href="//github.com/sauln" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/NathanielSaul" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//scholar.google.com/citations?user=vMsDzgwAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+
+
+
+
+
+
+
+  <li><a href="mailto:nat@saulgill.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Updates</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+
+        
+        <section id="mini-bio">
+            <time class="published" datetime='2018-08-01'>August 2018</time>:
+          
+            <p>My work on using Mapper to visualize machine learning models was accepted to <a href="https://visxai.io">IEEE Vis VISxAI Workshop</a>!</p>
+
+          
+        </section>
+
+        
+
+        
+        <section id="mini-bio">
+            <time class="published" datetime='2018-07-15'>July 2018</time>:
+          
+            <p><a href="https://scikit-tda.org">Scikit-tda.org</a> is live! More details about the project are coming soon!</p>
+
+          
+        </section>
+
+        
+
+        
+        <section id="mini-bio">
+            <time class="published" datetime='2018-06-15'>June 2018</time>:
+          
+            <p>I presented my <a href="/research/stitching">work on stitching mappers together</a> at the Young Researchers Forum at the Symposium on Computational Geometry.</p>
+
+          
+        </section>
+
+        
+
+        
+        <section id="mini-bio">
+            <time class="published" datetime='2018-04-30'>April 2018</time>:
+          
+            <p>My work abstract was accepted to the Symposium on Computational Geometry&rsquo;s Young Researchers Forum.</p>
+
+          
+        </section>
+
+        
+      </div>
+
+      
+        <a href=
+            "/updates/"
+        class="button">View older updates</a>
+      
+    </div>
+  </section>
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/sauln" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/NathanielSaul" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//scholar.google.com/citations?user=vMsDzgwAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+
+
+
+
+
+
+
+  <li><a href="mailto:nat@saulgill.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2018
+        
+          Nathaniel Saul | Around About
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+
+      
+
+<script type="text/javascript" src="https://cdn.rawgit.com/pcooksey/bibtex-js/abeec72eb0501d2f6ae41ed4f778b4a60e75984f/src/bibtex_js.js"></script>
+
+
+
+<div class="bibtex_template">
+    <div class="if author" style="font-weight: bold;">
+        <span class="author"></span>,
+        <span class="if year">
+        <span class="year"></span>
+        </span>
+
+        
+    </div>
+    <div style="margin-left: 10px; margin-bottom:5px;">
+        <span class="title"></span>
+    </div>
+</div>
+
+  </body>
+</html>
+
