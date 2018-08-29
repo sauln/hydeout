@@ -13,7 +13,7 @@
         "articleSection" : "blog",
         "name" : "Čech complex playground",
         "headline" : "Čech complex playground",
-        "description" : "Some tools for understanding nerves and persistence",
+        "description" : "Interactive tools for understanding nerves",
         "inLanguage" : "en",
         "author" : "",
         "creator" : "",
@@ -24,7 +24,7 @@
         "datePublished": "2018-08-28 00:00:00 &#43;0000 UTC",
         "dateModified" : "2018-08-28 00:00:00 &#43;0000 UTC",
         "url" : "/blog/nerve-playground/",
-        "wordCount" : "388",
+        "wordCount" : "381",
         "keywords" : [ "data visualization","Blog" ]
     }
     </script>
@@ -42,16 +42,16 @@
 
         
         
-            <meta name="description" content="Some tools for understanding nerves and persistence">
+            <meta name="description" content="Interactive tools for understanding nerves">
         
 
         <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Čech complex playground"/>
-<meta name="twitter:description" content="Some tools for understanding nerves and persistence"/>
+<meta name="twitter:description" content="Interactive tools for understanding nerves"/>
 <meta name="twitter:site" content="@NathanielSaul"/>
 
         <meta property="og:title" content="Čech complex playground" />
-<meta property="og:description" content="Some tools for understanding nerves and persistence" />
+<meta property="og:description" content="Interactive tools for understanding nerves" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/nerve-playground/" />
 
@@ -77,12 +77,12 @@
         <meta property="og:image:height" content="512">
         
 <meta itemprop="name" content="Čech complex playground">
-<meta itemprop="description" content="Some tools for understanding nerves and persistence">
+<meta itemprop="description" content="Interactive tools for understanding nerves">
 
 
 <meta itemprop="datePublished" content="2018-08-28T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-08-28T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="388">
+<meta itemprop="wordCount" content="381">
 
 
 
@@ -437,7 +437,7 @@ ga('send', 'pageview');
             
         
         
-            <p>Some tools for understanding nerves and persistence</p>
+            <p>Interactive tools for understanding nerves</p>
         
     </div>
     <div class="meta">
@@ -506,17 +506,15 @@ ga('send', 'pageview');
   
 </style>
 
-<p>Čech complexes are one of the main tools for building a simplicial complex from data, and in turn is regularly used in Persistent Homology.
-This post provides an interactive demonstration of the Čech complex of a 2-dimensional data set. It is meant to help newcomers gain an intuition for the complex.</p>
-
-<p>Below the visualization, we sketch out the basic mathematical definitions.</p>
+<p>Čech complexes are one of the main tools for building a simplicial complex from data and are used regularly for Persistent Homology.
+This post provides an interactive demonstration of the Čech complex for a 2-dimensional data set. It is meant to help newcomers gain an intuition about the complex.</p>
 
 <h3>Visualization</h3>
 
 <p>The resulting simplicial complex is overlaid on top of the covers. Here we only calculate the nerve up to order 2, i.e. vertices, edges, and triangles.</p>
 
 <ul>
-<li>The slider lets you change the radius of the balls and</li>
+<li>the slider lets you change the radius of the balls and</li>
 <li>the data points can be rearranged by dragging them.</li>
 </ul>
 
@@ -532,6 +530,9 @@ This post provides an interactive demonstration of the Čech complex of a 2-dime
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
+
+ window.onload = function() {
+
   (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 
 
@@ -588,26 +589,21 @@ This post provides an interactive demonstration of the Čech complex of a 2-dime
     var configs = require('./config');
     var nervePieces = require('./nervePieces.js');
     
-var parentDiv = document.getElementById("visual_space");
-var svg = d3.select(parentDiv).append("svg");
+    var parentDiv = document.getElementById("visual_space");
+    var svg = d3.select(parentDiv).append("svg");
 
-    // var svg = d3.select("svg");
-  var width = parentDiv.clientWidth * 0.7;
-  var height = 600
+    console.log(parentDiv.clientWidth)
+    console.log(parentDiv.innerWidth)
+    var width = parentDiv.clientWidth;
+    var height = 600
 
-  console.log("content has width" + width)
-//   var height = parentDiv.clientHeight;
+    // console.log("content has width" + width)
+  //   var height = parentDiv.clientHeight;
 
     svg.attr('width', width)
-    .attr('height', height)
-    // svg.attr("preserveAspectRatio", "xMinYMin meet")
-    //     .attr("viewBox", "0 0 960 500")
+      .attr('height', height)
     
-var parentDiv = document.getElementById("parentDiv");
-
-    var margin = {right: 0, left: 50, top: 20, bottom: 50},
-        width = +svg.attr("width") - margin.left - margin.right,
-        height = +svg.attr("height");
+    var margin = {right: 0, left: width*0.025, top: 20, bottom: 50};
     
     var circles = nervePieces.randomCircles(configs, width, height);
     
@@ -639,7 +635,7 @@ var parentDiv = document.getElementById("parentDiv");
     
     nervePieces.drawNerve(svg, circles)
     
-    var topRange = 100,
+    var topRange = width/8,
         bottomRange = 5;
     
     /// Handle slider
@@ -671,7 +667,7 @@ var parentDiv = document.getElementById("parentDiv");
     slider.transition() // Gratuitous intro!
       .duration(750)
       .tween("change_r", function() {
-        var i = d3.interpolate(bottomRange, (topRange - bottomRange)/2+bottomRange);
+        var i = d3.interpolate(bottomRange, (topRange - bottomRange)/4+bottomRange);
         return function(t) { change_r(i(t)); };
     });
     
@@ -687,13 +683,7 @@ var parentDiv = document.getElementById("parentDiv");
     
       nervePieces.drawNerve(svg, circles);
     }
-    
-    
-    
-    
-    
-    
-    
+
     },{"./config":2,"./nervePieces.js":5}],4:[function(require,module,exports){
     var basicmath = require('./basicmath');
     
@@ -890,7 +880,7 @@ var parentDiv = document.getElementById("parentDiv");
     
     },{"./config":2,"./nerveComputations.js":4}]},{},[3]);
     
-
+}
 </script>  
 
   </div>
