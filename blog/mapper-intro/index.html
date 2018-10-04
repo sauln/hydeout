@@ -24,7 +24,7 @@
         "datePublished": "2017-09-28 00:00:00 &#43;0000 UTC",
         "dateModified" : "2017-09-28 00:00:00 &#43;0000 UTC",
         "url" : "/blog/mapper-intro/",
-        "wordCount" : "476",
+        "wordCount" : "637",
         "keywords" : [ "Mapper","TDA","Math","Blog" ]
     }
     </script>
@@ -82,7 +82,7 @@
 
 <meta itemprop="datePublished" content="2017-09-28T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-09-28T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="476">
+<meta itemprop="wordCount" content="637">
 
 
 
@@ -271,7 +271,7 @@ ga('send', 'pageview');
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/blog/nerve-playground/">Čech complex playground</a></h3>
+                                <h3><a href="/blog/nerve-playground/">Čech Complex Playground</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2018-08-28'>
@@ -463,50 +463,42 @@ ga('send', 'pageview');
   <div id="content">
     
 
-<p>As one of the main tools from the field of Topological Data Analysis, <strong>mapper</strong> has been shown to be particularly useful for exploring high dimensional point cloud data.This post will walk through the mapper construction from an intuitive perspective and demonstrate its use on a toy example.</p>
+<p>As one of the main tools from the field of Topological Data Analysis, <strong>Mapper</strong> has been shown to be particularly useful for exploring high dimensional point cloud data. This post will walk through the mapper construction from an intuitive perspective and demonstrate how it can be constructed on a toy example.</p>
 
 <h2 id="motivation">Motivation</h2>
 
-<p><strong>Mapper</strong> is way to construct a graph (or simplicial complex) from data in a way that reveals the some of the topological features of the space. Though not exact, <strong>mapper</strong> is able to estimate important connectivity aspects of the underlying space of the data so that it can be explored in a visual format. This is an unsupervised method of generating a visual representation of the data that can often reveal new insights of the data that other methods cannot.</p>
+<p><strong>Mapper</strong> is way to construct a graph (or simplicial complex) from data in a way that reveals the some of the topological features of the space. Though not exact, <strong>Mapper</strong> is able to estimate important connectivity aspects of the underlying space of the data so that it can be explored in a visual forum. This is an unsupervised method of generating a visual representation of the data that can often reveal new insights of the data that other methods cannot. Most importantly, once constructed <strong>Mapper</strong> can be used by nonexperts to explore the structure of a data set or function on the data.</p>
 
-<h2 id="mapper">Mapper</h2>
+<h2 id="mapper-fundamentals">Mapper fundamentals</h2>
 
-<p>Mapper can be viewed from two perspectives, one very informal and one very mathematical.  The formal definition of <strong>mapper</strong> is a <strong>simplicial complex</strong> constructed by taking the <strong>nerve</strong> of the <strong>pullback</strong> of an overlapping cover of a <strong>lens</strong>. This definition boils down to simply splitting up the data points into buckets, clustering the points within each bucket, and then stringing the clusters together into a simplicial complex.</p>
+<p>As with many concepts from data science, <strong>Mapper</strong> can be viewed from two perspectives, one very informal and one very mathematical.  The formal definition of <strong>mapper</strong> is a <strong>simplicial complex</strong> constructed by taking the <strong>nerve</strong> of the <strong>refined pullback</strong> of an overlapping cover of a <strong>lens function</strong>. This definition boils down to simply splitting up the data points into buckets, clustering the points within each bucket, and then stringing the clusters together into a graph.</p>
 
 <p>To construct the mapper, we need to define two pieces</p>
 
 <ul>
-<li>the lens</li>
-<li>the cover</li>
+<li>a lens</li>
+<li>a cover of the lens</li>
 </ul>
 
-<p>The lens is a function that we look at the data through. It is a summarization of your data in a much lower dimensional space. If you are looking at 3D images, the lens function might be the height, or y-axis of the data. If your data is extremely high dimensional, your lens might TSNE or another dimensionality reduction.</p>
+<p>The lens is a function through which we observe the data. It is a summarization of your data in a much lower dimensional space. If you are looking at 3D images, the lens function might be the height, or y-axis of the data. If your data is extremely high dimensional, your lens might be a low dimensional representation constructed with UMAP or PCA, or a variable you are particularly concerned about.</p>
 
-<h2 id="example">Example</h2>
+<h2 id="an-illustration">An illustration</h2>
 
-<p>In these images, we have noisy data sampled from a circle. As a filter function, we have have chosen the y-axis, or height of the data points. The y-axis is then split into 10 sequential bins, each with some overlap with neighboring bins.</p>
+<p>Suppose we have some 2-dimensional data shown below.  A priori we might not realize it was sampled on some sort of circle. As a lens, we have have chosen the y-axis (or height of the data points). We define a cover of the lens to be 10 intervals with about 20% overlap.  The lens and cover are shown below.</p>
 
-<div class='scatter-plot intervals center-div'>
-  <!-- /the chart goes here -->
-</div>
+<p><img class="center" src="/img/mapper_images/cover.jpeg"></p>
 
-<p>We then find all points within each bin, and with respect to their position in the original space, we run any clustering algorithm. The second image shows the resulting clusters. Notice that because the original cover was overlapping, some of these clusters have data points in common.</p>
+<p>To compute the refined pullback cover of our data, we need to pull each of the cover elements back into our original space. In practice, this amounts to tracking the indices of data points in each cover element. To refine the pullback cover, we apply a clustering algorithm to the original high dimensional data, but to only the points within a cover element. In this case, we would apply a clustering algorithm to each of the 10 groups of points. In the case below, the first cover element has only one cluster, while the 3rd cover element has two clusters. Notice that because the original cover was overlapping, some of these clusters have data points in common.</p>
 
-<div class='scatter-plot intervals clusterA clusterB  center-div'>
-  <!-- /the chart goes here -->
-</div>
+<p><img class="center" src="/img/mapper_images/refined.jpeg"></p>
 
-<p>We then compute the <strong>nerve</strong> of these clusters. For each cluster, we add a vertex, and between any two clusters that share points in common, we add an edge between their respective vertices.</p>
+<p>The final step is to compute the <strong>nerve</strong> of these clusters. The <strong>nerve</strong> of a cover is a simplicial complex such that each cover element becomes a vertex and every time two or more cover elements intersect, their vertices are connected.  Below we show the <strong>nerve</strong> constructed from our refined pullback cover.</p>
 
-<div class='complex edges  center-div'>
-  <!-- /the chart goes here -->
-</div>
+<p><img class="center" src="/img/mapper_images/nerve.jpeg"></p>
 
-<p>The result is a graph (or simplicial complex)that captures the structure of the original data with respect to our lens. From the noisy data that was obviously drawn from a circle, we constructed a graph that is one big loop.</p>
+<p>The result is a graph (or simplicial complex) that captures the structure of the original data with respect to our lens. From the noisy data that was obviously drawn from a circle, we constructed a graph that represents one big circle.  If we did not know the data was sampled from the circle, we do now.</p>
 
-<p>From a homological perspective, the extra vertex and edge at the bottom is not very meaningful. In fact, if we decreased the number of bins used, these features would disappear while the loop would remain.</p>
-
-<p>To explore an mapper in practice, checkout <a href="https://github.com/MLWave/kepler-mapper">KeplerMapper</a>.</p>
+<p>If you want to get your hands dirty with some real data, checkout <a href="https://github.com/MLWave/kepler-mapper">KeplerMapper</a>. It makes it easy to define lenses and covers and to visualize and explore the resulting Mapper.</p>
 
   </div>
 

@@ -12,12 +12,14 @@
     
     
     <item>
-      <title>Čech complex playground</title>
+      <title>Čech Complex Playground</title>
       <link>/blog/nerve-playground/</link>
       <pubDate>Tue, 28 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/blog/nerve-playground/</guid>
-      <description>.active { stroke: #000; stroke-width: 2px; } .ticks { font: 10px sans-serif; } .track, .track-inset, .track-overlay { stroke-linecap: round; } .track { stroke: #000; stroke-opacity: 0.3; stroke-width: 10px; } .track-inset { stroke: #ddd; stroke-width: 8px; } .track-overlay { pointer-events: stroke; stroke-width: 50px; stroke: transparent; cursor: crosshair; } .handle { fill: #fff; stroke: #000; stroke-opacity: 0.5; stroke-width: 1.25px; }  Čech complexes are one of the main tools for building a simplicial complex from data and are used regularly for Persistent Homology.</description>
+      <description>--
+Čech complexes are one of the main tools for building a simplicial complex from data and are used regularly for Persistent Homology. This post provides an interactive demonstration of the Čech complex for a 2-dimensional data set. It is meant to help newcomers gain an intuition about the complex.
+Visualization The resulting simplicial complex is overlaid on top of the covers. Here we only calculate the nerve up to order 2, i.</description>
     </item>
     
   </channel>

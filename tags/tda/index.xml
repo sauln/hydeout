@@ -46,7 +46,7 @@ A tower \(~\mathcal{T} \) is a tuple ( \(T_\epsilon\), \(\{t_{\epsilon, \epsilon
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/blog/mapper-intro/</guid>
-      <description>As one of the main tools from the field of Topological Data Analysis, mapper has been shown to be particularly useful for exploring high dimensional point cloud data.This post will walk through the mapper construction from an intuitive perspective and demonstrate its use on a toy example.
+      <description>As one of the main tools from the field of Topological Data Analysis, Mapper has been shown to be particularly useful for exploring high dimensional point cloud data. This post will walk through the mapper construction from an intuitive perspective and demonstrate how it can be constructed on a toy example.
 Motivation Mapper is way to construct a graph (or simplicial complex) from data in a way that reveals the some of the topological features of the space.</description>
     </item>
     
