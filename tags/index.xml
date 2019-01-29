@@ -21,9 +21,18 @@
     </item>
     
     <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mapper</title>
       <link>/tags/mapper/</link>
-      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/mapper/</guid>
       <description></description>
@@ -59,9 +68,18 @@
     <item>
       <title>TDA</title>
       <link>/tags/tda/</link>
-      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/tda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>XAI</title>
+      <link>/tags/xai/</link>
+      <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/xai/</guid>
       <description></description>
     </item>
     

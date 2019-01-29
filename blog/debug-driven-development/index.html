@@ -24,7 +24,7 @@
         "datePublished": "2017-09-20 00:00:00 &#43;0000 UTC",
         "dateModified" : "2017-09-20 00:00:00 &#43;0000 UTC",
         "url" : "/blog/debug-driven-development/",
-        "wordCount" : "476",
+        "wordCount" : "359",
         "keywords" : [ "software design","Blog" ]
     }
     </script>
@@ -82,7 +82,7 @@
 
 <meta itemprop="datePublished" content="2017-09-20T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-09-20T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="476">
+<meta itemprop="wordCount" content="359">
 
 
 
@@ -271,6 +271,18 @@ ga('send', 'pageview');
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="/blog/tda_explain/">Machine Learning Explanations with Topological Data Analysis</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-10-30'>
+                                    October 30, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="/blog/nerve-playground/">Čech Complex Playground</a></h3>
                                 
                                 <time class="published" datetime=
@@ -300,18 +312,6 @@ ga('send', 'pageview');
                                 <time class="published" datetime=
                                     '2017-12-02'>
                                     December 2, 2017</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="/blog/towers-towers/">Nerves and Towers III: Towers</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2017-12-01'>
-                                    December 1, 2017</time>
                             </header>
                             
 
@@ -448,7 +448,7 @@ ga('send', 'pageview');
             September 20, 2017</time>
         <span class="author">Nathaniel Saul</span>
         
-            <p>3 minute read</p>
+            <p>2 minute read</p>
         
 
         
@@ -461,27 +461,16 @@ ga('send', 'pageview');
   
 
   <div id="content">
-    
+    <p>I heard once that debugging and fixing defects amounts to half the cost of software development <sup id="a1"><a href="#f1">1</a></sup>. Half of the time you spend writing code, you&rsquo;re not actually writing code, your fixing code. It seems to me that a strong majority of the software development tools we have are devoted to this effort. Yeah, text editors are for writing code, but all the little tools like debuggers, print statements, and inspect element, are designed for fixing code. They are designed for decreasing the time spent fixing defects.</p>
 
-<p>In this post, We propose a new software development methodology dubbed <em>debug-driven development</em>. Building upon work out of context and ignoring basic principles of time management, our proposed method cuts the average development* time of a project in half.</p>
+<p>But what if instead of putting so much energy into decreasing this half of the process, what if instead we tried to decrease the amount of time spent writing code?</p>
 
-<p>By using test driven development, we can redefine the develop-debug process to completely eliminate the development step. Instead of developing a feature, we can fix a broken test and in doing so the development portion of the develop-debug process disappears.</p>
+<p>I propose a new software development methodology dubbed <em>debug-driven development</em> (DDD).
+By using test driven development, we can redefine the develop-debug process to completely eliminate the development step. Instead of developing a feature, we can fix a broken test and in doing so the development portion of the develop-debug process disappears.</p>
 
-<h2 id="background">Background</h2>
-
-<p>Debugging and fixing defects amounts to half the cost of software development <sup id="a1"><a href="#f1">1</a></sup>. Half of the time you spend writing code, you&rsquo;re not actually writing code, your fixing code. The process of developing is a constant ping-pong of develop, debug, develop, debug. While developers have devoted immense effort into decreasing both the development cost and debug cost of a project.</p>
-
-<p>Test driven development is the process of writing your tests first. Before developing any code whatsoever, you first create a test that once passing, will tell you the code you created works how you originally wanted. This methodology has been heralded by many to improve code quality, reliability, maintainability, and development time. At first this seems counter-intuitive as you end up writing so much code for tests that are trivial and don&rsquo;t need testing anyways.</p>
+<p>Does that make sense? I think so. We can reframe a desired feature to just be a bug in the code, thus no development necessary, only fixing. We have now changed the entire software development life-cycle to have zero development. Besides cutting the workload in half by following DDD, you will also gain all the benefits of using TDD!</p>
 
 <p>Writing tests first improve code on a number of different fronts. None of these benefits are only realized through TDD. The real benefit comes not exactly from writing the tests, but from always thinking about <code>how would i test this</code>. It requires you to think first and foremost about what the program should do, not how it gets it done. This generally yields more intuitive interfaces that are transparent. Having all the tests in place once you&rsquo;re done of course increases maintainability and reliability.</p>
-
-<h2 id="related-work">Related work</h2>
-
-<p>Many researchers have explored the notion of <code>bug</code>, many finding that often bugs can be reinterpreted as features. While some industries adopt the mantra <code>the customer is always right</code>, researchers have found that development time can be greatly decreased by ignoring customer requests and developing whichever features they wish. This area has been both intriguing academically and has found stable footing within industry [cite shitty companies]</p>
-
-<h2 id="contributions">Contributions</h2>
-
-<p>By adopting test driven development, we can reframe a desired feature to actually be a bug in the code.  The development time of implementing the feature then gets transformed into debugging time.  Since debugging amounts to half of the time spent developing software and we are only debugging code, the entire timeline for the project instantly is cut in half.</p>
 
 <p><b id="f1">1</b> Reworking defects in requirements, design, and code consumes 40-50% of the total cost of software development. (Boehm, Barry W. 1987. &ldquo;Improving Software Productivity.&rdquo; IEEE Computer, September: 43-57.; Jones, Capers, ed. 1986. Tutorial: Programming Productivity: Issues for the Eighties, 2nd ed. Los Angeles: IEEE Computer Society Press.)
 <a href="#a1">↩</a></p>

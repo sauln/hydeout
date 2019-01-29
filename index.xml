@@ -6,10 +6,19 @@
     <description>Recent content on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Machine Learning Explanations with Topological Data Analysis</title>
+      <link>/blog/tda_explain/</link>
+      <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/tda_explain/</guid>
+      <description>We will demonstrate a novel application of Mapper to the domain of explanatory machine learning and show how Mapper can be used to understand not just the shape of data, but also understand a machine learning model.</description>
+    </item>
     
     <item>
       <title>Čech Complex Playground</title>
@@ -150,8 +159,7 @@ Motivation Mapper is way to construct a graph (or simplicial complex) from data 
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/blog/debug-driven-development/</guid>
-      <description>In this post, We propose a new software development methodology dubbed debug-driven development. Building upon work out of context and ignoring basic principles of time management, our proposed method cuts the average development* time of a project in half.
-By using test driven development, we can redefine the develop-debug process to completely eliminate the development step. Instead of developing a feature, we can fix a broken test and in doing so the development portion of the develop-debug process disappears.</description>
+      <description>I heard once that debugging and fixing defects amounts to half the cost of software development 1. Half of the time you spend writing code, you&amp;rsquo;re not actually writing code, your fixing code. It seems to me that a strong majority of the software development tools we have are devoted to this effort. Yeah, text editors are for writing code, but all the little tools like debuggers, print statements, and inspect element, are designed for fixing code.</description>
     </item>
     
     <item>

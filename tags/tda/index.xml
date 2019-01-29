@@ -6,10 +6,19 @@
     <description>Recent content in TDA on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/tda/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Machine Learning Explanations with Topological Data Analysis</title>
+      <link>/blog/tda_explain/</link>
+      <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/tda_explain/</guid>
+      <description>We will demonstrate a novel application of Mapper to the domain of explanatory machine learning and show how Mapper can be used to understand not just the shape of data, but also understand a machine learning model.</description>
+    </item>
     
     <item>
       <title>Nerves and Towers I: Introduction</title>
