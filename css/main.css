@@ -1606,7 +1606,7 @@
 				display: -webkit-flex;
 				display: -ms-flex;
 				display: flex;
-				border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+				/* border-bottom: solid 1px rgba(160, 160, 160, 0.3); */
 				left: -3em;
 				margin: -1.5em 0 -1.5em 0;
 				position: relative;

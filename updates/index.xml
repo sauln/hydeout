@@ -6,10 +6,28 @@
     <description>Recent content in Updates on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/updates/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>/updates/cechmate/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/cechmate/</guid>
+      <description>Cechmate, the newest addition to Scikit-TDA is ready for show time! Extended persistence will be released soon.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/siam-cse/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/siam-cse/</guid>
+      <description>I presented my mapper stitching and Atlas work at SIAM CSE 2019.</description>
+    </item>
     
     <item>
       <title></title>
@@ -44,7 +62,7 @@
       <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/updates/socg-accepted/</guid>
-      <description>My work abstract was accepted to the Symposium on Computational Geometry&amp;rsquo;s Young Researchers Forum.</description>
+      <description>My abstract was accepted to the Symposium on Computational Geometry&amp;rsquo;s Young Researchers Forum.</description>
     </item>
     
     <item>

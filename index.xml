@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nathaniel Saul | Around About</title>
+    <title>Nathaniel Rivera Saul | Around About on Nathaniel Saul | Around About</title>
     <link>/</link>
-    <description>Recent content on Nathaniel Saul | Around About</description>
+    <description>Recent content in Nathaniel Rivera Saul | Around About on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>/updates/cechmate/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/cechmate/</guid>
+      <description>Cechmate, the newest addition to Scikit-TDA is ready for show time! Extended persistence will be released soon.</description>
+    </item>
+    
+    <item>
+      <title>Topological Data Analysis in Python</title>
+      <link>/research/software/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/research/software/</guid>
+      <description>In support of my research and many others, I develop and maintain the Scikit-TDA Python package. This has been a monumental undertaken and has completely consumed my research and development time. My role has ranged from implementing and incorporating new algorithms to developing documentation and build systems to managing social media and promotion.
+This project grew from an implementation of Mapper to an all encompassing system for nearly all common methods used in Topological Data Analysis.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/siam-cse/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/siam-cse/</guid>
+      <description>I presented my mapper stitching and Atlas work at SIAM CSE 2019.</description>
+    </item>
     
     <item>
       <title>Machine Learning Explanations with Topological Data Analysis</title>
@@ -56,7 +84,7 @@ Visualization The resulting simplicial complex is overlaid on top of the covers.
       
       <guid>/research/explainable/</guid>
       <description>While visiting Pacific Northwest National Laboratory, I collaborated with Dustin L. Arendt to develop new ways Mapper could be applied for explaining machine learning models.
-Initial progress in this direction will be a part of the IEEE VIS 2018 Workshop on VISxAI.</description>
+Initial progress in this direction will be a part of the IEEE VIS 2018 Workshop on VISxAI. You can read more about the work here.</description>
     </item>
     
     <item>
@@ -66,7 +94,7 @@ Initial progress in this direction will be a part of the IEEE VIS 2018 Workshop 
       
       <guid>/research/stitching/</guid>
       <description>In collaboration with Bei Wang and Bala Krishnamoorthy, I am developing ways of composing Mappers built from different filter functions together, and developing techniques for quantifying the topological correlation and complexity inherent in particular filter functions.
-I presented preliminary results of this work at the Young Researchers Forum at SoCG 2018. See the abstract here.</description>
+I presented preliminary results of this work at the Young Researchers Forum at SoCG 2018 and at SIAM CSE 2019. You can find the abstract here.</description>
     </item>
     
     <item>
@@ -84,7 +112,7 @@ I presented preliminary results of this work at the Young Researchers Forum at S
       <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/updates/socg-accepted/</guid>
-      <description>My work abstract was accepted to the Symposium on Computational Geometry&amp;rsquo;s Young Researchers Forum.</description>
+      <description>My abstract was accepted to the Symposium on Computational Geometry&amp;rsquo;s Young Researchers Forum.</description>
     </item>
     
     <item>
@@ -169,53 +197,6 @@ Motivation Mapper is way to construct a graph (or simplicial complex) from data 
       
       <guid>/updates/passed-gqe/</guid>
       <description>I passed my Graduate Qualifying Exams!</description>
-    </item>
-    
-    <item>
-      <title>Galaxy classification</title>
-      <link>/research/galaxies/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/research/galaxies/</guid>
-      <description>I was awarded a NASA space grant through WSU to develop methods using Topological Data Analysis for classifying galaxies that have WR-bumps or not.
-Check out my blog post Classification using Persistence Images for a walk through on the methods I used.</description>
-    </item>
-    
-    <item>
-      <title>Kepler Mapper</title>
-      <link>/software/kepler-mapper/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/software/kepler-mapper/</guid>
-      <description>I actively maintain Kepler Mapper, a popular Python library for creating and visualizing Mappers. We provide a scikit-learn style API that is intuitive and approachable for data scientists and machine learning researchers. Check out the documentation.</description>
-    </item>
-    
-    <item>
-      <title>Persim</title>
-      <link>/software/persim/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/software/persim/</guid>
-      <description>I developed Persim, a library for computing persistence images of persistence diagrams. To learn more, check out the documentation page or see the source on github.</description>
-    </item>
-    
-    <item>
-      <title>Ripser.py</title>
-      <link>/software/ripser/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/software/ripser/</guid>
-      <description>Along with Christopher Tralie, I help maintain the Python wrapper for Ripser, a blazingly fast c++ project originally developed by Ulrich Bauer.
-My contribution have been user focused, spending most of my time on building an intuitive Python interface, visualization functionality, deployment and packaging, and automated testing and continuous integration.</description>
-    </item>
-    
-    <item>
-      <title>TaDAsets</title>
-      <link>/software/tadasets/</link>
-      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/software/tadasets/</guid>
-      <description>TaDAsets is a project intended to provide easy to use data sets for demonstrating and exploring analytics techniques. The goal is to provide constructors for many common topological objects. Check out the documentation or the source code on github</description>
     </item>
     
     <item>
