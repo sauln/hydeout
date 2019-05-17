@@ -6,10 +6,46 @@
     <description>Recent content in Updates on Nathaniel Saul | Around About</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/updates/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>/updates/new-relic/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/new-relic/</guid>
+      <description>I&amp;rsquo;ve started a new position as Machine Learning Software Engineer at New Relic!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/socg2019/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/socg2019/</guid>
+      <description>My abstract on Jaccard Filtrations has been accepted to the Young Researchers Forum at SoCG.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/graduate/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/graduate/</guid>
+      <description>I finished my Masters in Mathematics at Washington State University of Vancouver!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/scipy/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/scipy/</guid>
+      <description>My talk on Scikit-TDA got accepted to Scipy 2019! See you in Austin.</description>
+    </item>
     
     <item>
       <title></title>
