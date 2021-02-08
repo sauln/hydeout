@@ -1,0 +1,608 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "/"
+        },
+        "articleSection" : "blog",
+        "name" : "What is Mapper?",
+        "headline" : "What is Mapper?",
+        "description" : "Understanding of mapper from the ground up.",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2017",
+        "datePublished": "2017-09-28 00:00:00 &#43;0000 UTC",
+        "dateModified" : "2017-09-28 00:00:00 &#43;0000 UTC",
+        "url" : "/blog/mapper-intro/",
+        "wordCount" : "637",
+        "keywords" : [ "Mapper","TDA","Math","Blog" ]
+    }
+    </script>
+        
+            
+                <title>What is Mapper?</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.39" />
+        
+
+
+        
+        
+            <meta name="description" content="Understanding of mapper from the ground up.">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What is Mapper?"/>
+<meta name="twitter:description" content="Understanding of mapper from the ground up."/>
+<meta name="twitter:site" content="@NathanielSaul"/>
+
+        <meta property="og:title" content="What is Mapper?" />
+<meta property="og:description" content="Understanding of mapper from the ground up." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/mapper-intro/" />
+
+
+
+<meta property="article:published_time" content="2017-09-28T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2017-09-28T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        
+<meta itemprop="name" content="What is Mapper?">
+<meta itemprop="description" content="Understanding of mapper from the ground up.">
+
+
+<meta itemprop="datePublished" content="2017-09-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-09-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="637">
+
+
+
+<meta itemprop="keywords" content="Mapper,TDA,Math," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.14.2/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-101939399-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/docs/saul-resume.pdf">
+                            <i class="fa fa-file-o">&nbsp;</i>CV
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/research/">
+                            <i class="fa fa-pie-chart">&nbsp;</i>Research
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/docs/saul-resume.pdf">
+                            <h3>
+                                <i class="fa fa-file-o">&nbsp;</i>CV
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/research/">
+                            <h3>
+                                <i class="fa fa-pie-chart">&nbsp;</i>Research
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Updates</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/blogs-i-want-to-write/">Blogs I want to write</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-02-07'>
+                                    February 7, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/tda_explain/">Machine Learning Explanations with Topological Data Analysis</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-10-30'>
+                                    October 30, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/nerve-playground/">Čech Complex Playground</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-08-28'>
+                                    August 28, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/towers-basics/">Nerves and Towers I: Introduction</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-12-06'>
+                                    December 6, 2017</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fmapper-intro%2f&amp;text=What%20is%20Mapper%3f&amp;via=NathanielSaul" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//plus.google.com/share?url=%2fblog%2fmapper-intro%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fmapper-intro%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//reddit.com/submit?url=%2fblog%2fmapper-intro%2f&amp;title=What%20is%20Mapper%3f" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fmapper-intro%2f&amp;title=What%20is%20Mapper%3f" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=%2fblog%2fmapper-intro%2f&amp;title=What%20is%20Mapper%3f" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=%2fblog%2fmapper-intro%2f&amp;description=What%20is%20Mapper%3f" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Nathaniel%20Saul&amp;body=%2fblog%2fmapper-intro%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            
+                <h1><a href="/blog/mapper-intro/">What is Mapper?</a></h1>
+            
+            
+        
+        
+            <p>Understanding of mapper from the ground up.</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2017-09-28'>
+            September 28, 2017</time>
+        <span class="author">Nathaniel Saul</span>
+        
+            <p>3 minute read</p>
+        
+
+        
+    </div>
+</header>
+
+
+  
+
+  
+
+  <div id="content">
+    
+
+<p>As one of the main tools from the field of Topological Data Analysis, <strong>Mapper</strong> has been shown to be particularly useful for exploring high dimensional point cloud data. This post will walk through the mapper construction from an intuitive perspective and demonstrate how it can be constructed on a toy example.</p>
+
+<h2 id="motivation">Motivation</h2>
+
+<p><strong>Mapper</strong> is way to construct a graph (or simplicial complex) from data in a way that reveals the some of the topological features of the space. Though not exact, <strong>Mapper</strong> is able to estimate important connectivity aspects of the underlying space of the data so that it can be explored in a visual forum. This is an unsupervised method of generating a visual representation of the data that can often reveal new insights of the data that other methods cannot. Most importantly, once constructed <strong>Mapper</strong> can be used by nonexperts to explore the structure of a data set or function on the data.</p>
+
+<h2 id="mapper-fundamentals">Mapper fundamentals</h2>
+
+<p>As with many concepts from data science, <strong>Mapper</strong> can be viewed from two perspectives, one very informal and one very mathematical.  The formal definition of <strong>mapper</strong> is a <strong>simplicial complex</strong> constructed by taking the <strong>nerve</strong> of the <strong>refined pullback</strong> of an overlapping cover of a <strong>lens function</strong>. This definition boils down to simply splitting up the data points into buckets, clustering the points within each bucket, and then stringing the clusters together into a graph.</p>
+
+<p>To construct the mapper, we need to define two pieces</p>
+
+<ul>
+<li>a lens</li>
+<li>a cover of the lens</li>
+</ul>
+
+<p>The lens is a function through which we observe the data. It is a summarization of your data in a much lower dimensional space. If you are looking at 3D images, the lens function might be the height, or y-axis of the data. If your data is extremely high dimensional, your lens might be a low dimensional representation constructed with UMAP or PCA, or a variable you are particularly concerned about.</p>
+
+<h2 id="an-illustration">An illustration</h2>
+
+<p>Suppose we have some 2-dimensional data shown below.  A priori we might not realize it was sampled on some sort of circle. As a lens, we have have chosen the y-axis (or height of the data points). We define a cover of the lens to be 10 intervals with about 20% overlap.  The lens and cover are shown below.</p>
+
+<p><img class="center" src="/img/mapper_images/cover.jpeg"></p>
+
+<p>To compute the refined pullback cover of our data, we need to pull each of the cover elements back into our original space. In practice, this amounts to tracking the indices of data points in each cover element. To refine the pullback cover, we apply a clustering algorithm to the original high dimensional data, but to only the points within a cover element. In this case, we would apply a clustering algorithm to each of the 10 groups of points. In the case below, the first cover element has only one cluster, while the 3rd cover element has two clusters. Notice that because the original cover was overlapping, some of these clusters have data points in common.</p>
+
+<p><img class="center" src="/img/mapper_images/refined.jpeg"></p>
+
+<p>The final step is to compute the <strong>nerve</strong> of these clusters. The <strong>nerve</strong> of a cover is a simplicial complex such that each cover element becomes a vertex and every time two or more cover elements intersect, their vertices are connected.  Below we show the <strong>nerve</strong> constructed from our refined pullback cover.</p>
+
+<p><img class="center" src="/img/mapper_images/nerve.jpeg"></p>
+
+<p>The result is a graph (or simplicial complex) that captures the structure of the original data with respect to our lens. From the noisy data that was obviously drawn from a circle, we constructed a graph that represents one big circle.  If we did not know the data was sampled from the circle, we do now.</p>
+
+<p>If you want to get your hands dirty with some real data, checkout <a href="https://github.com/MLWave/kepler-mapper">KeplerMapper</a>. It makes it easy to define lenses and covers and to visualize and explore the resulting Mapper.</p>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="/tags/mapper">Mapper</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/tda">TDA</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/math">Math</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="/blog/debug-driven-development/"
+                class="button big previous">An argument for TDD</a></li>
+    
+
+    
+        <li><a href="/blog/towers-towers/"
+                class="button big next">Nerves and Towers III: Towers</a></li>
+    
+</ul>
+
+
+    </div>
+    
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.14.2/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.14.2/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.14.2/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.14.2/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+
+      
+
+<script type="text/javascript" src="https://cdn.rawgit.com/pcooksey/bibtex-js/abeec72eb0501d2f6ae41ed4f778b4a60e75984f/src/bibtex_js.js"></script>
+
+
+
+<div class="bibtex_template">
+    <div class="if author" style="font-weight: bold;">
+        <span class="author"></span>,
+        <span class="if year">
+        <span class="year"></span>
+        </span>
+
+        
+    </div>
+    <div style="margin-left: 10px; margin-bottom:5px;">
+        <span class="title"></span>
+    </div>
+</div>
+
+  </body>
+</html>
+

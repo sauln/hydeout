@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Updates on Nathaniel Saul | Around About</title>
+    <link>/updates/</link>
+    <description>Recent content in Updates on Nathaniel Saul | Around About</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/updates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/updates/open-sesame/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/open-sesame/</guid>
+      <description>I&amp;rsquo;ve joined OpenSesame as Machine Learning Software Engineer to work on search and recommendation!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/new-relic/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/new-relic/</guid>
+      <description>I&amp;rsquo;ve started a new position as Machine Learning Software Engineer at New Relic!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/graduate/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/graduate/</guid>
+      <description>I finished my Masters in Mathematics at Washington State University of Vancouver!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/socg2019/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/socg2019/</guid>
+      <description>My abstract on Jaccard Filtrations has been accepted to the Young Researchers Forum at SoCG.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/scipy/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/scipy/</guid>
+      <description>My talk on Scikit-TDA got accepted to Scipy 2019! See you in Austin.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/cechmate/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/cechmate/</guid>
+      <description>Cechmate, the newest addition to Scikit-TDA is ready for show time! Extended persistence will be released soon.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/siam-cse/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/siam-cse/</guid>
+      <description>I presented my mapper stitching and Atlas work at SIAM CSE 2019.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/visxai/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/visxai/</guid>
+      <description>My work on using Mapper to visualize machine learning models was accepted to IEEE Vis VISxAI Workshop!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/scikit-tda/</link>
+      <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/scikit-tda/</guid>
+      <description>Scikit-tda.org is live! More details about the project are coming soon!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/socg-presented/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/socg-presented/</guid>
+      <description>I presented my work on stitching mappers together at the Young Researchers Forum at the Symposium on Computational Geometry.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/socg-accepted/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/socg-accepted/</guid>
+      <description>My abstract was accepted to the Symposium on Computational Geometry&amp;rsquo;s Young Researchers Forum.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/research-showcase/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/research-showcase/</guid>
+      <description>I won second place at the WSUV Research Showcase for my talk on exploring high-dimensional data with Mapper.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/nasa-grant/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/nasa-grant/</guid>
+      <description>I was awarded the NASA Space Grant Fellowship to apply TDA to classification of galaxies.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/pnnl-internship/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/pnnl-internship/</guid>
+      <description>I will be joining the Visual Analytics Group at Pacific Northwest National Laboratories as a Research Intern for the summer.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/updates/passed-gqe/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/updates/passed-gqe/</guid>
+      <description>I passed my Graduate Qualifying Exams!</description>
+    </item>
+    
+  </channel>
+</rss>

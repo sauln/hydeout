@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Nathaniel Saul | Around About</title>
+    <link>/research/</link>
+    <description>Recent content in Research on Nathaniel Saul | Around About</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Topological Data Analysis in Python</title>
+      <link>/research/software/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/research/software/</guid>
+      <description>In support of my research and many others, I develop and maintain the Scikit-TDA Python package. This has been a monumental undertaken and has completely consumed my research and development time. My role has ranged from implementing and incorporating new algorithms to developing documentation and build systems to managing social media and promotion.
+This project grew from an implementation of Mapper to an all encompassing system for nearly all common methods used in Topological Data Analysis.</description>
+    </item>
+    
+    <item>
+      <title>Explainable Machine Learning with Mapper</title>
+      <link>/research/explainable/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/research/explainable/</guid>
+      <description>While visiting Pacific Northwest National Laboratory, I collaborated with Dustin L. Arendt to develop new ways Mapper could be applied for explaining machine learning models.
+Initial progress in this direction will be a part of the IEEE VIS 2018 Workshop on VISxAI. You can read more about the work here.</description>
+    </item>
+    
+    <item>
+      <title>Sewing with Topology</title>
+      <link>/research/stitching/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/research/stitching/</guid>
+      <description>In collaboration with Bei Wang and Bala Krishnamoorthy, I am developing ways of composing Mappers built from different filter functions together, and developing techniques for quantifying the topological correlation and complexity inherent in particular filter functions.
+I presented preliminary results of this work at the Young Researchers Forum at SoCG 2018 and at SIAM CSE 2019. You can find the abstract here.</description>
+    </item>
+    
+  </channel>
+</rss>

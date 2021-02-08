@@ -1,0 +1,580 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "/"
+        },
+        "articleSection" : "blog",
+        "name" : "An argument for TDD",
+        "headline" : "An argument for TDD",
+        "description" : "or debug-driven development.",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2017",
+        "datePublished": "2017-09-20 00:00:00 &#43;0000 UTC",
+        "dateModified" : "2017-09-20 00:00:00 &#43;0000 UTC",
+        "url" : "/blog/debug-driven-development/",
+        "wordCount" : "359",
+        "keywords" : [ "software design","humor","Blog" ]
+    }
+    </script>
+        
+            
+                <title>An argument for TDD</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.39" />
+        
+
+
+        
+        
+            <meta name="description" content="or debug-driven development.">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="An argument for TDD"/>
+<meta name="twitter:description" content="or debug-driven development."/>
+<meta name="twitter:site" content="@NathanielSaul"/>
+
+        <meta property="og:title" content="An argument for TDD" />
+<meta property="og:description" content="or debug-driven development." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/debug-driven-development/" />
+
+
+
+<meta property="article:published_time" content="2017-09-20T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2017-09-20T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        
+<meta itemprop="name" content="An argument for TDD">
+<meta itemprop="description" content="or debug-driven development.">
+
+
+<meta itemprop="datePublished" content="2017-09-20T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-09-20T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="359">
+
+
+
+<meta itemprop="keywords" content="software design,humor," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.14.2/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-101939399-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/docs/saul-resume.pdf">
+                            <i class="fa fa-file-o">&nbsp;</i>CV
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/research/">
+                            <i class="fa fa-pie-chart">&nbsp;</i>Research
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/docs/saul-resume.pdf">
+                            <h3>
+                                <i class="fa fa-file-o">&nbsp;</i>CV
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/research/">
+                            <h3>
+                                <i class="fa fa-pie-chart">&nbsp;</i>Research
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Updates</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/blogs-i-want-to-write/">Blogs I want to write</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2021-02-07'>
+                                    February 7, 2021</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/tda_explain/">Machine Learning Explanations with Topological Data Analysis</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-10-30'>
+                                    October 30, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/nerve-playground/">Čech Complex Playground</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-08-28'>
+                                    August 28, 2018</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/towers-basics/">Nerves and Towers I: Introduction</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-12-06'>
+                                    December 6, 2017</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fdebug-driven-development%2f&amp;text=An%20argument%20for%20TDD&amp;via=NathanielSaul" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//plus.google.com/share?url=%2fblog%2fdebug-driven-development%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fdebug-driven-development%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//reddit.com/submit?url=%2fblog%2fdebug-driven-development%2f&amp;title=An%20argument%20for%20TDD" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fdebug-driven-development%2f&amp;title=An%20argument%20for%20TDD" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=%2fblog%2fdebug-driven-development%2f&amp;title=An%20argument%20for%20TDD" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=%2fblog%2fdebug-driven-development%2f&amp;description=An%20argument%20for%20TDD" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Nathaniel%20Saul&amp;body=%2fblog%2fdebug-driven-development%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            
+                <h1><a href="/blog/debug-driven-development/">An argument for TDD</a></h1>
+            
+            
+        
+        
+            <p>or debug-driven development.</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2017-09-20'>
+            September 20, 2017</time>
+        <span class="author">Nathaniel Saul</span>
+        
+            <p>2 minute read</p>
+        
+
+        
+    </div>
+</header>
+
+
+  
+
+  
+
+  <div id="content">
+    <p>I heard once that debugging and fixing defects amounts to half the cost of software development <sup id="a1"><a href="#f1">1</a></sup>. Half of the time you spend writing code, you&rsquo;re not actually writing code, your fixing code. It seems to me that a strong majority of the software development tools we have are devoted to this effort. Yeah, text editors are for writing code, but all the little tools like debuggers, print statements, and inspect element, are designed for fixing code. They are designed for decreasing the time spent fixing defects.</p>
+
+<p>But what if instead of putting so much energy into decreasing this half of the process, what if instead we tried to decrease the amount of time spent writing code?</p>
+
+<p>I propose a new software development methodology dubbed <em>debug-driven development</em> (DDD).
+By using test driven development, we can redefine the develop-debug process to completely eliminate the development step. Instead of developing a feature, we can fix a broken test and in doing so the development portion of the develop-debug process disappears.</p>
+
+<p>Does that make sense? I think so. We can reframe a desired feature to just be a bug in the code, thus no development necessary, only fixing. We have now changed the entire software development life-cycle to have zero development. Besides cutting the workload in half by following DDD, you will also gain all the benefits of using TDD!</p>
+
+<p>Writing tests first improve code on a number of different fronts. None of these benefits are only realized through TDD. The real benefit comes not exactly from writing the tests, but from always thinking about <code>how would i test this</code>. It requires you to think first and foremost about what the program should do, not how it gets it done. This generally yields more intuitive interfaces that are transparent. Having all the tests in place once you&rsquo;re done of course increases maintainability and reliability.</p>
+
+<p><b id="f1">1</b> Reworking defects in requirements, design, and code consumes 40-50% of the total cost of software development. (Boehm, Barry W. 1987. &ldquo;Improving Software Productivity.&rdquo; IEEE Computer, September: 43-57.; Jones, Capers, ed. 1986. Tutorial: Programming Productivity: Issues for the Eighties, 2nd ed. Los Angeles: IEEE Computer Society Press.)
+<a href="#a1">↩</a></p>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="/tags/software-design">software design</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/humor">humor</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="/blog/introduction-to-tda/"
+                class="button big previous">Introduction to Topological Data Analysis</a></li>
+    
+
+    
+        <li><a href="/blog/mapper-intro/"
+                class="button big next">What is Mapper?</a></li>
+    
+</ul>
+
+
+    </div>
+    
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.14.2/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.14.2/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.14.2/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.14.2/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+
+      
+
+<script type="text/javascript" src="https://cdn.rawgit.com/pcooksey/bibtex-js/abeec72eb0501d2f6ae41ed4f778b4a60e75984f/src/bibtex_js.js"></script>
+
+
+
+<div class="bibtex_template">
+    <div class="if author" style="font-weight: bold;">
+        <span class="author"></span>,
+        <span class="if year">
+        <span class="year"></span>
+        </span>
+
+        
+    </div>
+    <div style="margin-left: 10px; margin-bottom:5px;">
+        <span class="title"></span>
+    </div>
+</div>
+
+  </body>
+</html>
+

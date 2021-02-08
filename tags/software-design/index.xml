@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software design on Nathaniel Saul | Around About</title>
+    <link>/tags/software-design/</link>
+    <description>Recent content in Software design on Nathaniel Saul | Around About</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/software-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogs I want to write</title>
+      <link>/blog/blogs-i-want-to-write/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/blogs-i-want-to-write/</guid>
+      <description>Organizational theory I&amp;rsquo;ve been very excited to learn about all sorts of principles from the field of organizational theory. What is most engaging is how they so strongly relate to many principles within the field of software architecture. Conway&amp;rsquo;s law establishes this principle, but I think we can take it further.
+Conway&amp;rsquo;s law states that the software developed by an organization mirrors the team and communication structures of that organization.</description>
+    </item>
+    
+    <item>
+      <title>An argument for TDD</title>
+      <link>/blog/debug-driven-development/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/debug-driven-development/</guid>
+      <description>I heard once that debugging and fixing defects amounts to half the cost of software development 1. Half of the time you spend writing code, you&amp;rsquo;re not actually writing code, your fixing code. It seems to me that a strong majority of the software development tools we have are devoted to this effort. Yeah, text editors are for writing code, but all the little tools like debuggers, print statements, and inspect element, are designed for fixing code.</description>
+    </item>
+    
+    <item>
+      <title>The Law of Demeter</title>
+      <link>/blog/law-of-demeter/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/law-of-demeter/</guid>
+      <description>The Law of Demeter is a small set of rules for how objects should interact with each other. It helps define the boundaries between objects and determine who controls and owns what. Applying this design principle gives each object their own personal space and keeps objects from micromanaging others.
+The rules The LoD provides actionable and quantifiable rules for structuring software that help enable the SOLID principles. It defines what methods and variables an object is allowed to call.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/blog/blogs-i-want-to-write/</loc>
+    <lastmod>2021-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/open-sesame/</loc>
+    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/new-relic/</loc>
+    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/graduate/</loc>
+    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/socg2019/</loc>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/scipy/</loc>
+    <lastmod>2019-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/cechmate/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/software/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/siam-cse/</loc>
+    <lastmod>2019-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/tda_explain/</loc>
+    <lastmod>2018-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/nerve-playground/</loc>
+    <lastmod>2018-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/visxai/</loc>
+    <lastmod>2018-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/scikit-tda/</loc>
+    <lastmod>2018-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/explainable/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/stitching/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/socg-presented/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/socg-accepted/</loc>
+    <lastmod>2018-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/research-showcase/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/nasa-grant/</loc>
+    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/pnnl-internship/</loc>
+    <lastmod>2018-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/towers-basics/</loc>
+    <lastmod>2017-12-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/towers-nerves/</loc>
+    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/towers-towers/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/mapper-intro/</loc>
+    <lastmod>2017-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/debug-driven-development/</loc>
+    <lastmod>2017-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/introduction-to-tda/</loc>
+    <lastmod>2017-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/updates/passed-gqe/</loc>
+    <lastmod>2017-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/law-of-demeter/</loc>
+    <lastmod>2017-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/tda_explanations/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/tda_explanations.html/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2021-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/data-visualization/</loc>
+    <lastmod>2018-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/humor/</loc>
+    <lastmod>2017-09-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2018-10-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2021-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mapper/</loc>
+    <lastmod>2018-10-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/math/</loc>
+    <lastmod>2017-12-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/multimapper/</loc>
+    <lastmod>2017-12-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/software-design/</loc>
+    <lastmod>2021-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tda/</loc>
+    <lastmod>2018-10-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2018-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/updates/</loc>
+    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/xai/</loc>
+    <lastmod>2018-10-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

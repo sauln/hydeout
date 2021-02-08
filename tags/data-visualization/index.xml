@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data visualization on Nathaniel Saul | Around About</title>
+    <link>/tags/data-visualization/</link>
+    <description>Recent content in Data visualization on Nathaniel Saul | Around About</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/data-visualization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Čech Complex Playground</title>
+      <link>/blog/nerve-playground/</link>
+      <pubDate>Tue, 28 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/nerve-playground/</guid>
+      <description>--
+Čech complexes are one of the main tools for building a simplicial complex from data and are used regularly for Persistent Homology. This post provides an interactive demonstration of the Čech complex for a 2-dimensional data set. It is meant to help newcomers gain an intuition about the complex.
+Visualization The resulting simplicial complex is overlaid on top of the covers. Here we only calculate the nerve up to order 2, i.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine learning on Nathaniel Saul | Around About</title>
+    <link>/tags/machine-learning/</link>
+    <description>Recent content in Machine learning on Nathaniel Saul | Around About</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogs I want to write</title>
+      <link>/blog/blogs-i-want-to-write/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/blogs-i-want-to-write/</guid>
+      <description>Organizational theory I&amp;rsquo;ve been very excited to learn about all sorts of principles from the field of organizational theory. What is most engaging is how they so strongly relate to many principles within the field of software architecture. Conway&amp;rsquo;s law establishes this principle, but I think we can take it further.
+Conway&amp;rsquo;s law states that the software developed by an organization mirrors the team and communication structures of that organization.</description>
+    </item>
+    
+  </channel>
+</rss>
